@@ -1,5 +1,8 @@
 # MLC-Nota
 
+## Introduction
+This repository is crafted with reference to the implementations of [mlc_llm](https://github.com/mlc-ai/mlc-llm) and [mlc_imp](https://github.com/MILVLG/mlc-imp). It supports the conversion of models such as Llama, Gemma, and also **LLaVA**, and includes the necessary implementations for processing these models. Future updates will include support for a broader range of foundational models.
+
 ## Demo
 You can get the apk file in [Google Drive](https://drive.google.com/file/d/1OeIHYpr44zZNk-N7n18mhUeB3v6FQJrB/view?usp=sharing) link.
   
