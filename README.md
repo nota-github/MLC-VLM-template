@@ -10,13 +10,14 @@ You can get the apk file in [Google Drive](https://drive.google.com/file/d/1OeIH
 
 
 ## Get Started
+The instructions below are written for **Mac**. If you are using a different OS, please adjust the settings accordingly.
 
 1. Please follow the [official link](https://llm.mlc.ai/docs/deploy/android.html#prerequisite) and install the prerequisites(Rust, Android Studio, JDK).
 
 2. Clone the repo
 ```bash
 git clone --recursive https://github.com/nota-github/mlc_mobile_fm.git
-cd mlc-nota
+cd mlc_mobile_fm
 ```
 
 3. Add environment variables at `~/.zshrc`
