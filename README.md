@@ -1,4 +1,4 @@
-# MLC-Nota
+# MLC Mobile FM
 
 ## Introduction
 This repository is crafted with reference to the implementations of [mlc_llm](https://github.com/mlc-ai/mlc-llm) and [mlc_imp](https://github.com/MILVLG/mlc-imp). It supports the conversion of models such as Llama, Gemma, and also **LLaVA**, and includes the necessary implementations for processing these models. Future updates will include support for a broader range of foundational models.
