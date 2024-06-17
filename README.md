@@ -21,8 +21,7 @@ cd mlc-nota
 
 3. Add environment variables at `~/.zshrc`
 ```
-export MLC_SOURCE_DIR="path/to/mlc-nota"
-export TVM_HOME="path/to/mlc-nota/3rdparty/tvm"
+export TVM_HOME="absolute/path/to/mlc_mobile_fm/3rdparty/tvm"
 export PYTHONPATH=$TVM_HOME/python:${PYTHONPATH}
 ```
 
@@ -48,11 +47,12 @@ echo "set(CMAKE_BUILD_TYPE RelWithDebInfo)" >> config.cmake
 echo "set(USE_METAL  ON)" >> config.cmake
 cmake .. && cmake --build . --parallel 4 && cd ../../../
 ```
+For more detailed information about the options, please refer to the *Option 2. Build from source - Details* section of the provided [link](https://llm.mlc.ai/docs/install/tvm.html).
 
 6. Build MLC LLM module from scratch
 ```bash
 mkdir build && cd build
-python ../cmake/gen_cmake_config.py # 환경에 맞게 세팅
+python ../cmake/gen_cmake_config.py
 cmake .. && cmake --build . --parallel 4 && cd ..
 cd python
 pip install -e .
