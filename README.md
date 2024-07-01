@@ -62,7 +62,6 @@ cd ..
 
 7. Package the model for android
 ```bash
-chmod +x package_from_scratch.sh
 bash package_from_scratch.sh
 ```
 
