@@ -42,7 +42,7 @@ public class ChatModule {
 
 
     public void image(float[] inp) {
-        long[] shape = {1, 3, 336, 336};
+        long[] shape = {1, 3, 224, 224};
         NDArray img = NDArray.empty(shape, new TVMType("float32"), Device.opencl());
         img.copyFrom(inp);
         prefillFunc.pushArg("<image>\n").pushArg(0).pushArg(0).pushArg("").pushArg(img).invoke();

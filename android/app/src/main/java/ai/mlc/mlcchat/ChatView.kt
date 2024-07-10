@@ -2,16 +2,19 @@ package ai.mlc.mlcchat
 
 import android.annotation.SuppressLint
 import android.app.Activity
+import android.content.Context
 import android.content.Intent
 import android.graphics.Bitmap
 import android.graphics.BitmapFactory
 import android.graphics.Canvas
 import android.graphics.Color
 import android.graphics.Paint
+import android.os.Environment
 import android.provider.MediaStore
 import android.text.TextUtils
 import android.util.Half
 import android.util.Log
+import android.widget.Toast
 import androidx.annotation.HalfFloat
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
@@ -59,6 +62,7 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.asImageBitmap
 import androidx.compose.ui.input.pointer.pointerInput
+import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.platform.LocalFocusManager
 import androidx.compose.ui.text.capitalize
 import androidx.compose.ui.text.style.TextAlign
@@ -68,7 +72,12 @@ import androidx.navigation.NavController
 import kotlinx.coroutines.launch
 import java.io.ByteArrayInputStream
 import java.io.ByteArrayOutputStream
-import java.util.Locale
+import java.io.File
+import java.io.IOException
+import java.time.Duration
+import java.time.Instant
+
+val textList = arrayOf("text", "to", "check", "latency", "and", "response")
 
 @ExperimentalMaterial3Api
 @Composable
@@ -81,7 +90,7 @@ fun ChatView(
         TopAppBar(
             title = {
                 Text(
-                    text = "Nota VLM Chat-LLaVA 7B",
+                    text = "Nota Chat",
                     color = MaterialTheme.colorScheme.onPrimary
                 )
             },
@@ -204,8 +213,8 @@ fun getImage(srcPath: String?): Bitmap? {
     val w = newOpts.outWidth
     val h = newOpts.outHeight
     //现在主流手机比较多是800*480分辨率，所以高和宽我们设置为
-    val hh = 336f //这里设置高度为196f
-    val ww = 336f //这里设置宽度为196f
+    val hh = 224f //这里设置高度为196f
+    val ww = 224f //这里设置宽度为196f
     //缩放比。由于是固定比例缩放，只用高或者宽其中一个数据进行计算即可
     var be = 1 //be=1表示不缩放
     if (w > h && w > ww) { //如果宽度大的话根据宽度固定大小缩放
@@ -218,7 +227,7 @@ fun getImage(srcPath: String?): Bitmap? {
     //重新读入图片，注意此时已经把options.inJustDecodeBounds 设回false了
     bitmap = BitmapFactory.decodeFile(srcPath, newOpts)
     //return compressImage(bitmap) //压缩好比例大小后再进行质量压缩
-    return scaleSize(bitmap, 336, 336)
+    return scaleSize(bitmap, 224, 224)
 }
 
 fun bitmapToBytes(bitmap: Bitmap): FloatArray{
@@ -274,7 +283,7 @@ fun MessageView(messageData: MessageData, activity: Activity) {
                     var bitmap = getImage(messageData.image_path)
                     if (bitmap != null) {
                         val image_data = bitmapToBytes(bitmap)
-                        Log.v("get_image", image_data.size.toString())
+//                        Log.v("get_image", image_data.size.toString())
                         var display_bitmap = Bitmap.createScaledBitmap(bitmap, 384, 384, true)
                         Image(
                             display_bitmap.asImageBitmap(),
@@ -313,11 +322,66 @@ fun MessageView(messageData: MessageData, activity: Activity) {
     }
 }
 
+var cnt = 0
+var start = Instant.now()
+var end = Instant.now()
+var dataIdx = 0
+var dataLength = textList.size
+
+
+fun saveTextToFile(context: Context, text: String) {
+    val state = Environment.getExternalStorageState()
+    if (Environment.MEDIA_MOUNTED == state) {
+        val file = File(context.getExternalFilesDir(null), "result.txt")
+        try {
+            val writer = java.io.FileWriter(file, true)
+            writer.append(text)
+            writer.close()
+            Log.d("MainActivity", "Text saved: $text")
+        } catch (e: IOException) {
+            e.printStackTrace()
+        }
+    } else {
+        Log.e("MainActivity", "External storage is not writable")
+    }
+}
+
+var benchmark = false
+
 @ExperimentalMaterial3Api
 @Composable
 fun SendMessageView(chatState: AppViewModel.ChatState, activity: Activity) {
     val localFocusManager = LocalFocusManager.current
     var local_activity : MainActivity = activity as MainActivity
+
+
+    if (benchmark){
+        val context = LocalContext.current
+        if (chatState.chatable() && cnt % 2 == 0 && dataIdx < dataLength){
+            if (dataIdx % 5 == 0){
+                Toast.makeText(context, "Data Idx: $dataIdx", Toast.LENGTH_SHORT).show()
+            }
+            start = Instant.now()
+            val inputText = textList[dataIdx]
+
+            chatState.requestGenerate(inputText)
+            cnt += 1
+            dataIdx += 1
+        }
+        if (chatState.chatable() && cnt % 2 == 1 && dataIdx <= dataLength) {
+            end = Instant.now()
+            val elapsedTime = Duration.between(start, end).toMillis()
+            val responseText = chatState.messages[1].text
+
+            val resultString = "$dataIdx!@!@!@$elapsedTime!@!@!@$responseText!@#\n\n"
+            saveTextToFile(context, resultString)
+            cnt += 1
+            chatState.requestResetChat()
+        }
+    }
+
+
+
     Row(
         horizontalArrangement = Arrangement.spacedBy(5.dp),
         verticalAlignment = Alignment.CenterVertically,
