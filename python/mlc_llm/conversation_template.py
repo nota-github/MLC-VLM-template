@@ -345,7 +345,7 @@ ConvTemplateRegistry.register_conv_template(
         stop_str=["</s>"],
         stop_token_ids=[32000],
         add_role_after_system_message=False,
-        # system_prefix_token_ids=[1],
+        image_token_index=32011,
     )
 )
 
