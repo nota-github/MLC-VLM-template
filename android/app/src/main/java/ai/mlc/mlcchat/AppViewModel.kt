@@ -222,7 +222,7 @@ class AppViewModel(application: Application) : AndroidViewModel(application) {
         private val modelUrl: String,
         private val modelDirFile: File
     ) {
-        var modelInitState = mutableStateOf(ModelInitState.Initializing)
+        var modelInitState = mutableStateOf(ModelInitState.Finished)
         private var paramsConfig = ParamsConfig(emptyList())
         val progress = mutableStateOf(0)
         val total = mutableStateOf(1)
