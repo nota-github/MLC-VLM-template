@@ -60,6 +60,13 @@ void Conversation::LoadJSONOverride(const picojson::value& config_json, bool par
     this->roles = roles;
   }
 
+  if (config.count("image_token_index")) {
+    CHECK(config["image_token_index"].is<int64_t>());
+    this->image_token_index = config["image_token_index"].get<int64_t>();
+  } else {
+    CHECK(partial_update) << "Key \"image_token_index\" not found.";
+  }
+
   if (config.count("messages")) {
     CHECK(config["messages"].is<picojson::array>()) << "Invalid messages" << err_templ;
     std::vector<std::vector<std::string>> messages;
