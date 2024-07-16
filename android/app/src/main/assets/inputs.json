@@ -1,0 +1,2640 @@
+{
+  "data": [
+    {
+      "image_path": "images/ai2d/0.jpeg",
+      "input_text": "which of these define dairy item"
+    },
+    {
+      "image_path": "images/ai2d/1.jpeg",
+      "input_text": "which of these define oil"
+    },
+    {
+      "image_path": "images/ai2d/2.jpeg",
+      "input_text": "According to the given food chain what would happen if phytoplankton decreases?"
+    },
+    {
+      "image_path": "images/ai2d/3.jpeg",
+      "input_text": "According to the given food chain, which is the smallest organism?"
+    },
+    {
+      "image_path": "images/ai2d/4.jpeg",
+      "input_text": "Based on the given diagram answer the following question. What would happen to the elephant seal population if there were no whales?"
+    },
+    {
+      "image_path": "images/ai2d/5.jpeg",
+      "input_text": "Based on the given diagram, the penguin is a"
+    },
+    {
+      "image_path": "images/ai2d/6.jpeg",
+      "input_text": "The diagram below shows a food chain. If the smaller toothed whales ate all the leopard seals, the population of krills would most likely."
+    },
+    {
+      "image_path": "images/ai2d/7.jpeg",
+      "input_text": "What could happen that would increase the number of krill?"
+    },
+    {
+      "image_path": "images/ai2d/8.jpeg",
+      "input_text": "What event will probably cause the elephant seal population to increase?"
+    },
+    {
+      "image_path": "images/ai2d/9.jpeg",
+      "input_text": "Which animal is at the top of this food chain?"
+    },
+    {
+      "image_path": "images/ai2d/10.jpeg",
+      "input_text": "Which would be most directly affected if all the baleen whales were removed?"
+    },
+    {
+      "image_path": "images/ai2d/11.jpeg",
+      "input_text": "In the diagram which letter shows the Adulte?"
+    },
+    {
+      "image_path": "images/ai2d/12.jpeg",
+      "input_text": "What stage in the diagram corresponds to letter D?"
+    },
+    {
+      "image_path": "images/ai2d/13.jpeg",
+      "input_text": "Larvae turn into what form?"
+    },
+    {
+      "image_path": "images/ai2d/14.jpeg",
+      "input_text": "This diagram shows the life cycle of an insect. What is the order of the insect's life stages, from youngest to oldest?"
+    },
+    {
+      "image_path": "images/ai2d/15.jpeg",
+      "input_text": "Which stage is egg here ?"
+    },
+    {
+      "image_path": "images/ai2d/16.jpeg",
+      "input_text": "which stage is adult here ?"
+    },
+    {
+      "image_path": "images/ai2d/17.jpeg",
+      "input_text": "What is the expanded part of a leaf or petal?"
+    },
+    {
+      "image_path": "images/ai2d/18.jpeg",
+      "input_text": "What is the region that represents the centriole?"
+    },
+    {
+      "image_path": "images/ai2d/19.jpeg",
+      "input_text": "What is the region that represents the vacuole?"
+    },
+    {
+      "image_path": "images/ai2d/20.jpeg",
+      "input_text": "Where the double-layered membrane enclosing the nucleus of a cell is known as?"
+    },
+    {
+      "image_path": "images/ai2d/21.jpeg",
+      "input_text": "What does the bird feed on/"
+    },
+    {
+      "image_path": "images/ai2d/22.jpeg",
+      "input_text": "What does the carnivore fish feed on?"
+    },
+    {
+      "image_path": "images/ai2d/23.jpeg",
+      "input_text": "What is at the highest of the food chain in this diagram?"
+    },
+    {
+      "image_path": "images/ai2d/24.jpeg",
+      "input_text": "What is at the lowest of the food chain in this diagram?"
+    },
+    {
+      "image_path": "images/ai2d/25.jpeg",
+      "input_text": "Which of the following correctly characterizes energy flow in the diagram?"
+    },
+    {
+      "image_path": "images/ai2d/26.jpeg",
+      "input_text": "Which organism sits at the bottom of the food chain seen above?"
+    },
+    {
+      "image_path": "images/ai2d/27.jpeg",
+      "input_text": "What is a producer?"
+    },
+    {
+      "image_path": "images/ai2d/28.jpeg",
+      "input_text": "What is at the top of the food web?"
+    },
+    {
+      "image_path": "images/ai2d/29.jpeg",
+      "input_text": "What is energy"
+    },
+    {
+      "image_path": "images/ai2d/30.jpeg",
+      "input_text": "What would be directly affected if organism A was extinct?"
+    },
+    {
+      "image_path": "images/ai2d/31.jpeg",
+      "input_text": "What would happen if oragnism D disappeared?"
+    },
+    {
+      "image_path": "images/ai2d/32.jpeg",
+      "input_text": "What would happen if organism A disappeared?"
+    },
+    {
+      "image_path": "images/ai2d/33.jpeg",
+      "input_text": "What would happen to organism A if organism B increased?"
+    },
+    {
+      "image_path": "images/ai2d/34.jpeg",
+      "input_text": "What would happen to organism c if organism b increased?"
+    },
+    {
+      "image_path": "images/ai2d/35.jpeg",
+      "input_text": "How many stages are in this cycle?"
+    },
+    {
+      "image_path": "images/ai2d/36.jpeg",
+      "input_text": "How many stages are shown in the diagram?"
+    },
+    {
+      "image_path": "images/ai2d/37.jpeg",
+      "input_text": "Mealworms are the larva of various beetles of the genus Tenebrio. Which stage represents the mealworm?"
+    },
+    {
+      "image_path": "images/ai2d/38.jpeg",
+      "input_text": "What is the stage after egg?"
+    },
+    {
+      "image_path": "images/ai2d/39.jpeg",
+      "input_text": "What stage comes after egg?"
+    },
+    {
+      "image_path": "images/ai2d/40.jpeg",
+      "input_text": "During which step is the egg  released from the egg mass?"
+    },
+    {
+      "image_path": "images/ai2d/41.jpeg",
+      "input_text": "In the diagram it show the growth of a frog, does stage C show?"
+    },
+    {
+      "image_path": "images/ai2d/42.jpeg",
+      "input_text": "The diagram depicts the life cycle of:"
+    },
+    {
+      "image_path": "images/ai2d/43.jpeg",
+      "input_text": "What is shown by stage E?"
+    },
+    {
+      "image_path": "images/ai2d/44.jpeg",
+      "input_text": "Which stage is next to the Egg Mass?"
+    },
+    {
+      "image_path": "images/ai2d/45.jpeg",
+      "input_text": "How many stages are in the development of a mosquito?"
+    },
+    {
+      "image_path": "images/ai2d/46.jpeg",
+      "input_text": "What stage is represents the egg?"
+    },
+    {
+      "image_path": "images/ai2d/47.jpeg",
+      "input_text": "How many quarters see the half moon?"
+    },
+    {
+      "image_path": "images/ai2d/48.jpeg",
+      "input_text": "What is the new moon in the diagram?"
+    },
+    {
+      "image_path": "images/ai2d/49.jpeg",
+      "input_text": "Which letter shows the lunar phase that occurs when the Moon is completely illuminated as seen from the Earth?"
+    },
+    {
+      "image_path": "images/ai2d/50.jpeg",
+      "input_text": "Which phase describes the point at which the moon appears nearly invisible in the sky?"
+    },
+    {
+      "image_path": "images/ai2d/51.jpeg",
+      "input_text": "In the life cycle of the butterfly, what stage comes with after larva?"
+    },
+    {
+      "image_path": "images/ai2d/52.jpeg",
+      "input_text": "In the life cycle shown to us, what stage comes after pupa?"
+    },
+    {
+      "image_path": "images/ai2d/53.jpeg",
+      "input_text": "What comes before pupa according to the diagram?"
+    },
+    {
+      "image_path": "images/ai2d/54.jpeg",
+      "input_text": "What stage is shown in C in the diagram?"
+    },
+    {
+      "image_path": "images/ai2d/55.jpeg",
+      "input_text": "Which label refers to the adult stage?"
+    },
+    {
+      "image_path": "images/ai2d/56.jpeg",
+      "input_text": "Which label refers to the larva stage?"
+    },
+    {
+      "image_path": "images/ai2d/57.jpeg",
+      "input_text": "WHAT IS A LABEL A REPRESENT  IN THE ABOVE DIAGRAM?"
+    },
+    {
+      "image_path": "images/ai2d/58.jpeg",
+      "input_text": "According to the food web, what is the source of energy for the squirrel?"
+    },
+    {
+      "image_path": "images/ai2d/59.jpeg",
+      "input_text": "According to the food web, what will happen if the grass dried up due to extreme heat?"
+    },
+    {
+      "image_path": "images/ai2d/60.jpeg",
+      "input_text": "Base your answers on the diagram below and on your knowledge of science. Which are the organisms are herbivores?"
+    },
+    {
+      "image_path": "images/ai2d/61.jpeg",
+      "input_text": "From the above food web diagram, if all the grass dies then population of squirrel will"
+    },
+    {
+      "image_path": "images/ai2d/62.jpeg",
+      "input_text": "From the above food web diagram, what will cause moose to increase"
+    },
+    {
+      "image_path": "images/ai2d/63.jpeg",
+      "input_text": "From the above food web diagram, which species provide energy"
+    },
+    {
+      "image_path": "images/ai2d/64.jpeg",
+      "input_text": "In the given food web, which organism consume higher number of prey?"
+    },
+    {
+      "image_path": "images/ai2d/65.jpeg",
+      "input_text": "In the given food web, which organism have no predator?"
+    },
+    {
+      "image_path": "images/ai2d/66.jpeg",
+      "input_text": "In the given terrestrial food web, which organisms are known as primary source of energy?"
+    },
+    {
+      "image_path": "images/ai2d/67.jpeg",
+      "input_text": "What is a primary consumer?"
+    },
+    {
+      "image_path": "images/ai2d/68.jpeg",
+      "input_text": "What is at the top of the food chain?"
+    },
+    {
+      "image_path": "images/ai2d/69.jpeg",
+      "input_text": "From the above food chain diagram, increase in number of sheep leads to"
+    },
+    {
+      "image_path": "images/ai2d/70.jpeg",
+      "input_text": "From the above food chain diagram, which species is secondary consumer"
+    },
+    {
+      "image_path": "images/ai2d/71.jpeg",
+      "input_text": "From the above food web diagram, which species increase if all the owl dies"
+    },
+    {
+      "image_path": "images/ai2d/72.jpeg",
+      "input_text": "From the above food web diagram, which species is the tertiary consumer"
+    },
+    {
+      "image_path": "images/ai2d/73.jpeg",
+      "input_text": "What grass a primary food source for?"
+    },
+    {
+      "image_path": "images/ai2d/74.jpeg",
+      "input_text": "What would be most impacted if all the owls disappeared?"
+    },
+    {
+      "image_path": "images/ai2d/75.jpeg",
+      "input_text": "What would happen if the deer population increased?"
+    },
+    {
+      "image_path": "images/ai2d/76.jpeg",
+      "input_text": "What would happen if there was a sudden decrease in grass?"
+    },
+    {
+      "image_path": "images/ai2d/77.jpeg",
+      "input_text": "What would happen if there were less crickets?"
+    },
+    {
+      "image_path": "images/ai2d/78.jpeg",
+      "input_text": "Which is a carnivore?"
+    },
+    {
+      "image_path": "images/ai2d/79.jpeg",
+      "input_text": "Which is the end result of the process of growth?"
+    },
+    {
+      "image_path": "images/ai2d/80.jpeg",
+      "input_text": "Which label shows the first stage of the life cycle?"
+    },
+    {
+      "image_path": "images/ai2d/81.jpeg",
+      "input_text": "What organism does this diagram portray?"
+    },
+    {
+      "image_path": "images/ai2d/82.jpeg",
+      "input_text": "What process does this diagram portray?"
+    },
+    {
+      "image_path": "images/ai2d/83.jpeg",
+      "input_text": "What label is represented by B ?"
+    },
+    {
+      "image_path": "images/ai2d/84.jpeg",
+      "input_text": "Why is A necessary for living of a insect ?"
+    },
+    {
+      "image_path": "images/ai2d/85.jpeg",
+      "input_text": "What does the letter C represent?"
+    },
+    {
+      "image_path": "images/ai2d/86.jpeg",
+      "input_text": "Which of the following is not a Gneiss, Intrusion or Volcanics?"
+    },
+    {
+      "image_path": "images/ai2d/87.jpeg",
+      "input_text": "What does stage B depict?"
+    },
+    {
+      "image_path": "images/ai2d/88.jpeg",
+      "input_text": "What is the result of a hatching egg?"
+    },
+    {
+      "image_path": "images/ai2d/89.jpeg",
+      "input_text": "What label shows the adult phase of the frog?"
+    },
+    {
+      "image_path": "images/ai2d/90.jpeg",
+      "input_text": "What stage of the life cycle of a frog is shown at letter D?"
+    },
+    {
+      "image_path": "images/ai2d/91.jpeg",
+      "input_text": "Which layer surrounds the mantle?"
+    },
+    {
+      "image_path": "images/ai2d/92.jpeg",
+      "input_text": "What is represented by letter A?"
+    },
+    {
+      "image_path": "images/ai2d/93.jpeg",
+      "input_text": "Which letter represents the mature frog?"
+    },
+    {
+      "image_path": "images/ai2d/94.jpeg",
+      "input_text": "Iris is an example of what?"
+    },
+    {
+      "image_path": "images/ai2d/95.jpeg",
+      "input_text": "Which label represents corms?"
+    },
+    {
+      "image_path": "images/ai2d/96.jpeg",
+      "input_text": "Which of the following are examples of corms?"
+    },
+    {
+      "image_path": "images/ai2d/97.jpeg",
+      "input_text": "Base your answers on the food web below and on your knowledge of biology. Which organisms are carnivores?"
+    },
+    {
+      "image_path": "images/ai2d/98.jpeg",
+      "input_text": "If plankticorous fish are removed from the food chain shown in the diagram, which organisms are likely to face starvation?"
+    },
+    {
+      "image_path": "images/ai2d/99.jpeg",
+      "input_text": "In the diagram of the food web shown, what does the piscivorous fish consume?"
+    },
+    {
+      "image_path": "images/ai2d/100.jpeg",
+      "input_text": "In the diagram shown, which organism consumes the phytoplankton?"
+    },
+    {
+      "image_path": "images/ai2d/101.jpeg",
+      "input_text": "Part of the forest ecosystem is shown. Phytoplanktons is a"
+    },
+    {
+      "image_path": "images/ai2d/102.jpeg",
+      "input_text": "Part of the forest ecosystem is shown. Zooplanktons feeds on?"
+    },
+    {
+      "image_path": "images/ai2d/103.jpeg",
+      "input_text": "What is at the top of this food chain?"
+    },
+    {
+      "image_path": "images/ai2d/104.jpeg",
+      "input_text": "Which of these is the highest in the food chain in this diagram?"
+    },
+    {
+      "image_path": "images/ai2d/105.jpeg",
+      "input_text": "Which of these is the lowest in the food chain in this diagram?"
+    },
+    {
+      "image_path": "images/ai2d/106.jpeg",
+      "input_text": "According to the given food web, what are the consequences if all the fruits are plucked by humans?"
+    },
+    {
+      "image_path": "images/ai2d/107.jpeg",
+      "input_text": "According to the given food web, what is the main source of energy?"
+    },
+    {
+      "image_path": "images/ai2d/108.jpeg",
+      "input_text": "Base your answers on the food web below and on your knowledge of biology. Which is white tailed deer?"
+    },
+    {
+      "image_path": "images/ai2d/109.jpeg",
+      "input_text": "Based on the food web diagram given here, white tailed deer can be categorized under which group?"
+    },
+    {
+      "image_path": "images/ai2d/110.jpeg",
+      "input_text": "In the diagram of the food web shown, berries are a food source for which of these?"
+    },
+    {
+      "image_path": "images/ai2d/111.jpeg",
+      "input_text": "In the diagram of the food web shown, the bald eagle gets its energy from?"
+    },
+    {
+      "image_path": "images/ai2d/112.jpeg",
+      "input_text": "In the diagram of the food web shown, what do fruit get its energy source from?"
+    },
+    {
+      "image_path": "images/ai2d/113.jpeg",
+      "input_text": "In the diagram of the food web shown, what does does the red panda eat?"
+    },
+    {
+      "image_path": "images/ai2d/114.jpeg",
+      "input_text": "In the diagram, which organism supplies the energy for the food web shown?"
+    },
+    {
+      "image_path": "images/ai2d/115.jpeg",
+      "input_text": "In this food web diagram, Bamboo can be considered as a"
+    },
+    {
+      "image_path": "images/ai2d/116.jpeg",
+      "input_text": "Which of the following is not a producer organism in the diagram below?"
+    },
+    {
+      "image_path": "images/ai2d/117.jpeg",
+      "input_text": "A food web is represented in the diagram . Which organisms are correctly paired with their roles in this food web?"
+    },
+    {
+      "image_path": "images/ai2d/118.jpeg",
+      "input_text": "According to the given food chain, which organisms are primary consumers of shell fish?"
+    },
+    {
+      "image_path": "images/ai2d/119.jpeg",
+      "input_text": "According to the given food chain, which organisms would be affected if there were no shellfish?"
+    },
+    {
+      "image_path": "images/ai2d/120.jpeg",
+      "input_text": "Based on the diagram of a food chain below and on your knowledge of science. The harmful algae in this food chain represents a"
+    },
+    {
+      "image_path": "images/ai2d/121.jpeg",
+      "input_text": "From the Below food chain, which of the community is primary consumers?"
+    },
+    {
+      "image_path": "images/ai2d/122.jpeg",
+      "input_text": "From the above food web diagram, algae is"
+    },
+    {
+      "image_path": "images/ai2d/123.jpeg",
+      "input_text": "Which of the following is not predator of fish?"
+    },
+    {
+      "image_path": "images/ai2d/124.jpeg",
+      "input_text": "Which one is producer of this food web?"
+    },
+    {
+      "image_path": "images/ai2d/125.jpeg",
+      "input_text": "Who is predator of shellfish?"
+    },
+    {
+      "image_path": "images/ai2d/126.jpeg",
+      "input_text": "Who is primary predator in this food web?"
+    },
+    {
+      "image_path": "images/ai2d/127.jpeg",
+      "input_text": "Which group has a notched outline?"
+    },
+    {
+      "image_path": "images/ai2d/128.jpeg",
+      "input_text": "Which of these shows a smooth edged leaf?"
+    },
+    {
+      "image_path": "images/ai2d/129.jpeg",
+      "input_text": "What is the larva of a frog that is limbless, has gills, and a long flat shaped tail?"
+    },
+    {
+      "image_path": "images/ai2d/130.jpeg",
+      "input_text": "Which letter refers to a tadpole?"
+    },
+    {
+      "image_path": "images/ai2d/131.jpeg",
+      "input_text": "Which letter represents the tadpole?"
+    },
+    {
+      "image_path": "images/ai2d/132.jpeg",
+      "input_text": "Which stage is shown at letter B?"
+    },
+    {
+      "image_path": "images/ai2d/133.jpeg",
+      "input_text": "What is B in the diagram?"
+    },
+    {
+      "image_path": "images/ai2d/134.jpeg",
+      "input_text": "What is E in the diagram?"
+    },
+    {
+      "image_path": "images/ai2d/135.jpeg",
+      "input_text": "Which organ or part is horny sheath covering the toes or lower part of the foot of a mammal?"
+    },
+    {
+      "image_path": "images/ai2d/136.jpeg",
+      "input_text": "Which part is found inside the horny hoof?"
+    },
+    {
+      "image_path": "images/ai2d/137.jpeg",
+      "input_text": "Which letter represents the Spurred flower?"
+    },
+    {
+      "image_path": "images/ai2d/138.jpeg",
+      "input_text": "In the diagram of the food web shown what will most directly be affected by the loss of the trees?"
+    },
+    {
+      "image_path": "images/ai2d/139.jpeg",
+      "input_text": "In the food web diagram that is shown, which is the producer?"
+    },
+    {
+      "image_path": "images/ai2d/140.jpeg",
+      "input_text": "What is an example of a producer in this diagram?"
+    },
+    {
+      "image_path": "images/ai2d/141.jpeg",
+      "input_text": "What is the largest planet besides the sun?"
+    },
+    {
+      "image_path": "images/ai2d/142.jpeg",
+      "input_text": "What is the name of the planet closest to the sun."
+    },
+    {
+      "image_path": "images/ai2d/143.jpeg",
+      "input_text": "Which planet is label C?"
+    },
+    {
+      "image_path": "images/ai2d/144.jpeg",
+      "input_text": "What is in the center of the Nuclear Envelope?"
+    },
+    {
+      "image_path": "images/ai2d/145.jpeg",
+      "input_text": "What just inside of the Cell coat?"
+    },
+    {
+      "image_path": "images/ai2d/146.jpeg",
+      "input_text": "WHICH DESCRIBE ABOUT NORTH POLE?"
+    },
+    {
+      "image_path": "images/ai2d/147.jpeg",
+      "input_text": "WHICH LABEL REPRESENTS SOUTH POLE?"
+    },
+    {
+      "image_path": "images/ai2d/148.jpeg",
+      "input_text": "What does the green arrow at the equator represent?"
+    },
+    {
+      "image_path": "images/ai2d/149.jpeg",
+      "input_text": "What does the letter A represent?"
+    },
+    {
+      "image_path": "images/ai2d/150.jpeg",
+      "input_text": "Growth is best described as:"
+    },
+    {
+      "image_path": "images/ai2d/151.jpeg",
+      "input_text": "Letter C in the diagram represents which stage of development?"
+    },
+    {
+      "image_path": "images/ai2d/152.jpeg",
+      "input_text": "Maturity is best represented by which letter in the diagram?"
+    },
+    {
+      "image_path": "images/ai2d/153.jpeg",
+      "input_text": "From the above food web diagram, spartina is"
+    },
+    {
+      "image_path": "images/ai2d/154.jpeg",
+      "input_text": "From the above food web diagram, which species get directly affected if all plants dies"
+    },
+    {
+      "image_path": "images/ai2d/155.jpeg",
+      "input_text": "Prokelisia is the main food for _____?"
+    },
+    {
+      "image_path": "images/ai2d/156.jpeg",
+      "input_text": "Which is the following is predator?"
+    },
+    {
+      "image_path": "images/ai2d/157.jpeg",
+      "input_text": "Which organism is at the top of the food chain?"
+    },
+    {
+      "image_path": "images/ai2d/158.jpeg",
+      "input_text": "Which organism is the primary producer?"
+    },
+    {
+      "image_path": "images/ai2d/159.jpeg",
+      "input_text": "which is the following primary consumer?"
+    },
+    {
+      "image_path": "images/ai2d/160.jpeg",
+      "input_text": "If the phytoplankton disappeared, who would need a new source of energy?"
+    },
+    {
+      "image_path": "images/ai2d/161.jpeg",
+      "input_text": "Imagine that sunlight was removed from the diagram below. What would be an immediate result?"
+    },
+    {
+      "image_path": "images/ai2d/162.jpeg",
+      "input_text": "Using the diagram, identify the organism that provides energy to the bluegill."
+    },
+    {
+      "image_path": "images/ai2d/163.jpeg",
+      "input_text": "What does bass feed on?"
+    },
+    {
+      "image_path": "images/ai2d/164.jpeg",
+      "input_text": "What does bluegill feed on?"
+    },
+    {
+      "image_path": "images/ai2d/165.jpeg",
+      "input_text": "What feeds on aquatic insects?"
+    },
+    {
+      "image_path": "images/ai2d/166.jpeg",
+      "input_text": "What feeds on bass?"
+    },
+    {
+      "image_path": "images/ai2d/167.jpeg",
+      "input_text": "A food web is shown. Lizard is a/an"
+    },
+    {
+      "image_path": "images/ai2d/168.jpeg",
+      "input_text": "According to the food web, what is the number of organisms that feed on ants?"
+    },
+    {
+      "image_path": "images/ai2d/169.jpeg",
+      "input_text": "According to the food web, what leads to increase in the population of ants?"
+    },
+    {
+      "image_path": "images/ai2d/170.jpeg",
+      "input_text": "Base your answers on the food chain below and on your knowledge of science. Which among the below is a producer?"
+    },
+    {
+      "image_path": "images/ai2d/171.jpeg",
+      "input_text": "From the above food web diagram, decrease in lizards would directly affect"
+    },
+    {
+      "image_path": "images/ai2d/172.jpeg",
+      "input_text": "From the above food web diagram, what would happen to ants if all the plants dies"
+    },
+    {
+      "image_path": "images/ai2d/173.jpeg",
+      "input_text": "From the above food web diagram, which species depends on plants for food"
+    },
+    {
+      "image_path": "images/ai2d/174.jpeg",
+      "input_text": "From the above food web diagram, which species provide energy for eagle"
+    },
+    {
+      "image_path": "images/ai2d/175.jpeg",
+      "input_text": "In the diagram of the food web shown, what consumes the plats directly?"
+    },
+    {
+      "image_path": "images/ai2d/176.jpeg",
+      "input_text": "In the diagram of the food web shown, what will be most directly impacted if the number of ant decrease?"
+    },
+    {
+      "image_path": "images/ai2d/177.jpeg",
+      "input_text": "The diagram below represents a food web. what is a food for frog?"
+    },
+    {
+      "image_path": "images/ai2d/178.jpeg",
+      "input_text": "which organism would most likely have a decrease in its population if decrease the population of ant base of above diagram?"
+    },
+    {
+      "image_path": "images/ai2d/179.jpeg",
+      "input_text": "In the life cycle of a crane fly, which letter represents the leather jacket stage?"
+    },
+    {
+      "image_path": "images/ai2d/180.jpeg",
+      "input_text": "The diagram shows the life cycle of a crane fly. During which time frame does stage C occur?"
+    },
+    {
+      "image_path": "images/ai2d/181.jpeg",
+      "input_text": "What is D in the diagram?"
+    },
+    {
+      "image_path": "images/ai2d/182.jpeg",
+      "input_text": "What is E in the diagram?"
+    },
+    {
+      "image_path": "images/ai2d/183.jpeg",
+      "input_text": "The cactus is surrounded with these."
+    },
+    {
+      "image_path": "images/ai2d/184.jpeg",
+      "input_text": "Which label represents leaves?"
+    },
+    {
+      "image_path": "images/ai2d/185.jpeg",
+      "input_text": "Which label represents stem?"
+    },
+    {
+      "image_path": "images/ai2d/186.jpeg",
+      "input_text": "What is at the bottom of the tulip bulb?"
+    },
+    {
+      "image_path": "images/ai2d/187.jpeg",
+      "input_text": "Which one of these is found inside the tulip bulb?"
+    },
+    {
+      "image_path": "images/ai2d/188.jpeg",
+      "input_text": "Which region in the diagram represents the flower bud?"
+    },
+    {
+      "image_path": "images/ai2d/189.jpeg",
+      "input_text": "Which region in the diagram represents the roots?"
+    },
+    {
+      "image_path": "images/ai2d/190.jpeg",
+      "input_text": "Look at the diagram what is the cycle?"
+    },
+    {
+      "image_path": "images/ai2d/191.jpeg",
+      "input_text": "What stage of development does a mosquito go through after the larval stage"
+    },
+    {
+      "image_path": "images/ai2d/192.jpeg",
+      "input_text": "What stage of development does a mosuito go through after the egg stage?"
+    },
+    {
+      "image_path": "images/ai2d/193.jpeg",
+      "input_text": "What term best describes the mosquito that is represented by D?"
+    },
+    {
+      "image_path": "images/ai2d/194.jpeg",
+      "input_text": "Which stage in the given diagram represents the pupal stage?"
+    },
+    {
+      "image_path": "images/ai2d/195.jpeg",
+      "input_text": "Which Diagram Shows spring Here ?"
+    },
+    {
+      "image_path": "images/ai2d/196.jpeg",
+      "input_text": "From the above food web diagram, which species are most predators"
+    },
+    {
+      "image_path": "images/ai2d/197.jpeg",
+      "input_text": "How many organisms in this diagram are producers?"
+    },
+    {
+      "image_path": "images/ai2d/198.jpeg",
+      "input_text": "How many producers are there in this food web?"
+    },
+    {
+      "image_path": "images/ai2d/199.jpeg",
+      "input_text": "What gets energy from a producer?"
+    },
+    {
+      "image_path": "images/ai2d/200.jpeg",
+      "input_text": "What gets energy from the sun?"
+    },
+    {
+      "image_path": "images/ai2d/201.jpeg",
+      "input_text": "What is the name for the thing at the top of the food chain?"
+    },
+    {
+      "image_path": "images/ai2d/202.jpeg",
+      "input_text": "Which is the main source of energy?"
+    },
+    {
+      "image_path": "images/ai2d/203.jpeg",
+      "input_text": "In the diagram shown, which is the producer?"
+    },
+    {
+      "image_path": "images/ai2d/204.jpeg",
+      "input_text": "In the diagram shown, which organism consumes deer as a food source?"
+    },
+    {
+      "image_path": "images/ai2d/205.jpeg",
+      "input_text": "In the diagram shown, which organism consumes deer for a food energy source?"
+    },
+    {
+      "image_path": "images/ai2d/206.jpeg",
+      "input_text": "Refer the diagram and choose the right answer accordingly. What will happen to the Coyote Population if the Rabbits are extinct?"
+    },
+    {
+      "image_path": "images/ai2d/207.jpeg",
+      "input_text": "Refer the diagram and choose the right answer accordingly. Which among the below is a carnivore?"
+    },
+    {
+      "image_path": "images/ai2d/208.jpeg",
+      "input_text": "What do coyotes eat?"
+    },
+    {
+      "image_path": "images/ai2d/209.jpeg",
+      "input_text": "What feeds on the deer?"
+    },
+    {
+      "image_path": "images/ai2d/210.jpeg",
+      "input_text": "What is a producer?"
+    },
+    {
+      "image_path": "images/ai2d/211.jpeg",
+      "input_text": "What is the producer shown here?"
+    },
+    {
+      "image_path": "images/ai2d/212.jpeg",
+      "input_text": "Which of the following gets energy from plants?"
+    },
+    {
+      "image_path": "images/ai2d/213.jpeg",
+      "input_text": "Which of the following is a secondary consumer?"
+    },
+    {
+      "image_path": "images/ai2d/214.jpeg",
+      "input_text": "the outermost layer of earth is known as:"
+    },
+    {
+      "image_path": "images/ai2d/215.jpeg",
+      "input_text": "At this time of year, where are the sun's rays generally the warmest?"
+    },
+    {
+      "image_path": "images/ai2d/216.jpeg",
+      "input_text": "The letter B in the diagram represents?"
+    },
+    {
+      "image_path": "images/ai2d/217.jpeg",
+      "input_text": "What is represented by letter B?"
+    },
+    {
+      "image_path": "images/ai2d/218.jpeg",
+      "input_text": "Where is the Arctic Circle on the diagram?"
+    },
+    {
+      "image_path": "images/ai2d/219.jpeg",
+      "input_text": "Letter I refers to which organ?"
+    },
+    {
+      "image_path": "images/ai2d/220.jpeg",
+      "input_text": "What is the bottom-most opening shown in the diagram?"
+    },
+    {
+      "image_path": "images/ai2d/221.jpeg",
+      "input_text": "What is the opening on the face?"
+    },
+    {
+      "image_path": "images/ai2d/222.jpeg",
+      "input_text": "Which organ produces bile?"
+    },
+    {
+      "image_path": "images/ai2d/223.jpeg",
+      "input_text": "In which label on the diagram is the grasshopper the smallest?"
+    },
+    {
+      "image_path": "images/ai2d/224.jpeg",
+      "input_text": "What is the body part labeled D?"
+    },
+    {
+      "image_path": "images/ai2d/225.jpeg",
+      "input_text": "What organism does this diagram portray?"
+    },
+    {
+      "image_path": "images/ai2d/226.jpeg",
+      "input_text": "Base your answers on the food web below and on your knowledge of science. Identify the producer in this food web ?"
+    },
+    {
+      "image_path": "images/ai2d/227.jpeg",
+      "input_text": "Based on the given food web diagram, which of these animals act as a prey only?"
+    },
+    {
+      "image_path": "images/ai2d/228.jpeg",
+      "input_text": "Based on the given food web diagram, which of these following statements are true?"
+    },
+    {
+      "image_path": "images/ai2d/229.jpeg",
+      "input_text": "From the above food web diagram, if all the grasshopper dies then population of plants will"
+    },
+    {
+      "image_path": "images/ai2d/230.jpeg",
+      "input_text": "From the above food web diagram, name the species that eat plants"
+    },
+    {
+      "image_path": "images/ai2d/231.jpeg",
+      "input_text": "In the diagram of the food web as shown, if the shrew population decreases, the earthworm population will most likely?"
+    },
+    {
+      "image_path": "images/ai2d/232.jpeg",
+      "input_text": "In the diagram of the food web shown, the shrew consumes which of these directly?"
+    },
+    {
+      "image_path": "images/ai2d/233.jpeg",
+      "input_text": "Name the producer organism in the diagram below."
+    },
+    {
+      "image_path": "images/ai2d/234.jpeg",
+      "input_text": "Select the organism below which is both carnivorous as well as food for other carnivores."
+    },
+    {
+      "image_path": "images/ai2d/235.jpeg",
+      "input_text": "What feeds on leopard frogs?"
+    },
+    {
+      "image_path": "images/ai2d/236.jpeg",
+      "input_text": "Which organism supplies the energy for the food web shown?"
+    },
+    {
+      "image_path": "images/ai2d/237.jpeg",
+      "input_text": "what is a producer?"
+    },
+    {
+      "image_path": "images/ai2d/238.jpeg",
+      "input_text": "What is the fifth planet from the sun, the largest and most massive in the solar system?"
+    },
+    {
+      "image_path": "images/ai2d/239.jpeg",
+      "input_text": "What is the object labeled E?"
+    },
+    {
+      "image_path": "images/ai2d/240.jpeg",
+      "input_text": "What is the second farthest object from the center? (Orange in color.)"
+    },
+    {
+      "image_path": "images/ai2d/241.jpeg",
+      "input_text": "What star is the basis of the solar system that sustains life on Earth, being the source of heat and light?"
+    },
+    {
+      "image_path": "images/ai2d/242.jpeg",
+      "input_text": "From the above food web diagram, which species need to find other energy source after grass"
+    },
+    {
+      "image_path": "images/ai2d/243.jpeg",
+      "input_text": "From the food web shown in the diagram, which organism is the primary consumer?"
+    },
+    {
+      "image_path": "images/ai2d/244.jpeg",
+      "input_text": "From the food web shown in the diagram, which organism is the producer?"
+    },
+    {
+      "image_path": "images/ai2d/245.jpeg",
+      "input_text": "If the producer in this ecosystem disappeared, the organism directly affected would be"
+    },
+    {
+      "image_path": "images/ai2d/246.jpeg",
+      "input_text": "Imagine that crickets died out in the ecosystem shown above. Predict which of these outcomes would be most likely to occur:"
+    },
+    {
+      "image_path": "images/ai2d/247.jpeg",
+      "input_text": "Refer the diagram and choose the option which is a carnivore?"
+    },
+    {
+      "image_path": "images/ai2d/248.jpeg",
+      "input_text": "What feeds on crickets?"
+    },
+    {
+      "image_path": "images/ai2d/249.jpeg",
+      "input_text": "What is a predator?"
+    },
+    {
+      "image_path": "images/ai2d/250.jpeg",
+      "input_text": "What would happen if the cricket population decreased?"
+    },
+    {
+      "image_path": "images/ai2d/251.jpeg",
+      "input_text": "Which among the below causes pollution?"
+    },
+    {
+      "image_path": "images/ai2d/252.jpeg",
+      "input_text": "In the diagram below, how many days does the Adult live?"
+    },
+    {
+      "image_path": "images/ai2d/253.jpeg",
+      "input_text": "In the diagram below, how many days does the Nymph stage last?"
+    },
+    {
+      "image_path": "images/ai2d/254.jpeg",
+      "input_text": "Diagram letter C refers to what part of the fish?"
+    },
+    {
+      "image_path": "images/ai2d/255.jpeg",
+      "input_text": "What organism is shown in the diagram above?"
+    },
+    {
+      "image_path": "images/ai2d/256.jpeg",
+      "input_text": "Which label applies to the Soft Dorsal of the fish?"
+    },
+    {
+      "image_path": "images/ai2d/257.jpeg",
+      "input_text": "How many layers does the earth have?"
+    },
+    {
+      "image_path": "images/ai2d/258.jpeg",
+      "input_text": "What is the outermost layer of the earth called?"
+    },
+    {
+      "image_path": "images/ai2d/259.jpeg",
+      "input_text": "What is the region that represents the crust?"
+    },
+    {
+      "image_path": "images/ai2d/260.jpeg",
+      "input_text": "What is the region that represents the mantle?"
+    },
+    {
+      "image_path": "images/ai2d/261.jpeg",
+      "input_text": "The above diagram shows the mouth parts of which organism?"
+    },
+    {
+      "image_path": "images/ai2d/262.jpeg",
+      "input_text": "The letter F is point at what part of the cockroach's mouth parts?"
+    },
+    {
+      "image_path": "images/ai2d/263.jpeg",
+      "input_text": "The letter I is pointing at what part of the cockroach?"
+    },
+    {
+      "image_path": "images/ai2d/264.jpeg",
+      "input_text": "In the food web diagram that is shown, which is the producer?"
+    },
+    {
+      "image_path": "images/ai2d/265.jpeg",
+      "input_text": "In the food web diagram that is shown, which organism consumes snakes as a primary food?"
+    },
+    {
+      "image_path": "images/ai2d/266.jpeg",
+      "input_text": "What is at the highest of the food chain in this diagram?"
+    },
+    {
+      "image_path": "images/ai2d/267.jpeg",
+      "input_text": "What is at the lowest of the food chain in this diagram?"
+    },
+    {
+      "image_path": "images/ai2d/268.jpeg",
+      "input_text": "Who is the producer in the food web shown?"
+    },
+    {
+      "image_path": "images/ai2d/269.jpeg",
+      "input_text": "Who is the top predator in the food web shown?"
+    },
+    {
+      "image_path": "images/ai2d/270.jpeg",
+      "input_text": "What is the oxygen represented by in the diagram?"
+    },
+    {
+      "image_path": "images/ai2d/271.jpeg",
+      "input_text": "What is the sunlight represented by in the diagram?"
+    },
+    {
+      "image_path": "images/ai2d/272.jpeg",
+      "input_text": "What is uptaked into the plant at stage A?"
+    },
+    {
+      "image_path": "images/ai2d/273.jpeg",
+      "input_text": "which of the label show maximum leaf"
+    },
+    {
+      "image_path": "images/ai2d/274.jpeg",
+      "input_text": "which of the label show round shape leaf"
+    },
+    {
+      "image_path": "images/ai2d/275.jpeg",
+      "input_text": "which is nearest planet of sun?"
+    },
+    {
+      "image_path": "images/ai2d/276.jpeg",
+      "input_text": "which is the Center of planet?"
+    },
+    {
+      "image_path": "images/ai2d/277.jpeg",
+      "input_text": "which label defines saturn"
+    },
+    {
+      "image_path": "images/ai2d/278.jpeg",
+      "input_text": "What is depicted at stage E?"
+    },
+    {
+      "image_path": "images/ai2d/279.jpeg",
+      "input_text": "What is the first stage in the life cycle of a jellfish (Scyphozoa)?"
+    },
+    {
+      "image_path": "images/ai2d/280.jpeg",
+      "input_text": "IN THE ABOVE DIAGRAM DESCRIBE ABOUT VACUOLE?"
+    },
+    {
+      "image_path": "images/ai2d/281.jpeg",
+      "input_text": "What layer is between layer L and layer C?"
+    },
+    {
+      "image_path": "images/ai2d/282.jpeg",
+      "input_text": "What organism is shown in the diagram above?"
+    },
+    {
+      "image_path": "images/ai2d/283.jpeg",
+      "input_text": "What is the line down the leaflet called?"
+    },
+    {
+      "image_path": "images/ai2d/284.jpeg",
+      "input_text": "How many stager are in the life cycle of a grasshopper?"
+    },
+    {
+      "image_path": "images/ai2d/285.jpeg",
+      "input_text": "What feature does an adult grasshopper have that a nymph does not?"
+    },
+    {
+      "image_path": "images/ai2d/286.jpeg",
+      "input_text": "What is shown at F in the diagram?"
+    },
+    {
+      "image_path": "images/ai2d/287.jpeg",
+      "input_text": "What is the term for the second stage?"
+    },
+    {
+      "image_path": "images/ai2d/288.jpeg",
+      "input_text": "What part does F represent?"
+    },
+    {
+      "image_path": "images/ai2d/289.jpeg",
+      "input_text": "What stage is labeled C in the diagram?"
+    },
+    {
+      "image_path": "images/ai2d/290.jpeg",
+      "input_text": "At which label does the egg hatch into larva?"
+    },
+    {
+      "image_path": "images/ai2d/291.jpeg",
+      "input_text": "At which stage is the animal fully grown?"
+    },
+    {
+      "image_path": "images/ai2d/292.jpeg",
+      "input_text": "Which stage follows the egg stage of development in a beetle's life cycle?"
+    },
+    {
+      "image_path": "images/ai2d/293.jpeg",
+      "input_text": "Letter G shows which line?"
+    },
+    {
+      "image_path": "images/ai2d/294.jpeg",
+      "input_text": "Line C depicts the Tropic of _______?"
+    },
+    {
+      "image_path": "images/ai2d/295.jpeg",
+      "input_text": "The Tropic of Cancer is which letter?"
+    },
+    {
+      "image_path": "images/ai2d/296.jpeg",
+      "input_text": "What is being shown by the lines labeled H?"
+    },
+    {
+      "image_path": "images/ai2d/297.jpeg",
+      "input_text": "Which circle divides the earth into two hemispheres?"
+    },
+    {
+      "image_path": "images/ai2d/298.jpeg",
+      "input_text": "Choose the option that is a producer?"
+    },
+    {
+      "image_path": "images/ai2d/299.jpeg",
+      "input_text": "From the above food web diagram, if all the algae dies then population of bacteria will"
+    },
+    {
+      "image_path": "images/ai2d/300.jpeg",
+      "input_text": "In the diagram of the food web shown, the plant feeding nematodes get their energy source from?"
+    },
+    {
+      "image_path": "images/ai2d/301.jpeg",
+      "input_text": "In the diagram of the food web shown, what are the predatory nematodes consumed by?"
+    },
+    {
+      "image_path": "images/ai2d/302.jpeg",
+      "input_text": "What does a high-level predator eat?"
+    },
+    {
+      "image_path": "images/ai2d/303.jpeg",
+      "input_text": "What feeds on organic matter?"
+    },
+    {
+      "image_path": "images/ai2d/304.jpeg",
+      "input_text": "What feeds on plant-feeding nematodes?"
+    },
+    {
+      "image_path": "images/ai2d/305.jpeg",
+      "input_text": "What is an herbivore?"
+    },
+    {
+      "image_path": "images/ai2d/306.jpeg",
+      "input_text": "What is at the top of the food web?"
+    },
+    {
+      "image_path": "images/ai2d/307.jpeg",
+      "input_text": "Which among the below helps in creating Organic matter?"
+    },
+    {
+      "image_path": "images/ai2d/308.jpeg",
+      "input_text": "How many changes are shown in the diagram?"
+    },
+    {
+      "image_path": "images/MathVista/0.png",
+      "input_text": "When a spring does work on an object, we cannot find the work by simply multiplying the spring force by the object's displacement. The reason is that there is no one value for the force-it changes. However, we can split the displacement up into an infinite number of tiny parts and then approximate the force in each as being constant. Integration sums the work done in all those parts. Here we use the generic result of the integration.\r\n\r\nIn Figure, a cumin canister of mass $m=0.40 \\mathrm{~kg}$ slides across a horizontal frictionless counter with speed $v=0.50 \\mathrm{~m} / \\mathrm{s}$. It then runs into and compresses a spring of spring constant $k=750 \\mathrm{~N} / \\mathrm{m}$. When the canister is momentarily stopped by the spring, by what distance $d$ is the spring compressed?"
+    },
+    {
+      "image_path": "images/MathVista/1.png",
+      "input_text": "what is the total volume of the measuring cup?"
+    },
+    {
+      "image_path": "images/MathVista/2.png",
+      "input_text": "\u25b3ABC\u7684\u4e24\u5185\u89d2\u5e73\u5206\u7ebfOB\u3001OC\u76f8\u4ea4\u4e8e\u70b9O\uff0c\u82e5\u2220A\uff1d110\u00b0\uff0c\u5219\u2220BOC\uff1d\uff08\uff09"
+    },
+    {
+      "image_path": "images/MathVista/3.png",
+      "input_text": "Subtract all large rubber spheres. Subtract all big shiny cylinders. How many objects are left?"
+    },
+    {
+      "image_path": "images/MathVista/4.png",
+      "input_text": "Find $m\\angle H$"
+    },
+    {
+      "image_path": "images/MathVista/5.png",
+      "input_text": "As shown in the figure, if CB = 4.0, DB = 7.0, and D is the midpoint of AC, then the length of AC is ()"
+    },
+    {
+      "image_path": "images/MathVista/6.png",
+      "input_text": "What time is shown? Answer by typing a time word, not a number. It is (_) after eight."
+    },
+    {
+      "image_path": "images/MathVista/7.png",
+      "input_text": "Is the number of tiny gray bicycles that are on the left side of the brown metal sedan greater than the number of things that are to the left of the tiny green bicycle?"
+    },
+    {
+      "image_path": "images/MathVista/8.png",
+      "input_text": "\u5982\u56fe\u662f\u4e00\u682a\u7f8e\u4e3d\u7684\u52fe\u80a1\u6811\uff0c\u5176\u4e2d\u6240\u6709\u56db\u8fb9\u5f62\u90fd\u662f\u6b63\u65b9\u5f62\uff0c\u6240\u6709\u7684\u4e09\u89d2\u5f62\u90fd\u662f\u76f4\u89d2\u4e09\u89d2\u5f62\uff0c\u82e5\u6b63\u65b9\u5f62A\u3001B\u7684\u9762\u79ef\u5206\u522b\u4e3a5\u30013\uff0c\u5219\u6700\u5927\u6b63\u65b9\u5f62C\u7684\u9762\u79ef\u662f\uff08\uff09"
+    },
+    {
+      "image_path": "images/MathVista/9.png",
+      "input_text": "Which object comes next?"
+    },
+    {
+      "image_path": "images/MathVista/10.png",
+      "input_text": "Subtract all red things. Subtract all tiny matte balls. How many objects are left?"
+    },
+    {
+      "image_path": "images/MathVista/11.png",
+      "input_text": "Are there fewer metallic fighters than rubber objects?"
+    },
+    {
+      "image_path": "images/MathVista/12.png",
+      "input_text": "How many objects are preferred by more than 90 percent of people in at least one category?"
+    },
+    {
+      "image_path": "images/MathVista/13.png",
+      "input_text": "Is the number of tiny objects that are behind the small metal jet less than the number of tiny things left of the tiny sedan?"
+    },
+    {
+      "image_path": "images/MathVista/14.png",
+      "input_text": "Which organism with be most affected if algae was eliminated?"
+    },
+    {
+      "image_path": "images/MathVista/15.png",
+      "input_text": "How many items sold less than 5 units in at least one store?"
+    },
+    {
+      "image_path": "images/MathVista/16.png",
+      "input_text": "\u5982\u56fe\uff0c\u5728Rt\u25b3ABC\u4e2d\uff0c\u2220ACB\uff1d90\u00b0\uff0cD\u662fAB\u7684\u4e2d\u70b9\uff0cAB\uff1d10\uff0c\u5219CD\u7684\u957f\u4e3a\uff08\uff09"
+    },
+    {
+      "image_path": "images/MathVista/17.png",
+      "input_text": "The passage below describes an experiment. Read the passage and then follow the instructions below.\n\nLinda applied a thin layer of wax to the underside of her snowboard and rode the board straight down a hill. Then, she removed the wax and rode the snowboard straight down the hill again. She repeated the rides four more times, alternating whether she rode with a thin layer of wax on the board or not. Her friend Bob timed each ride. Linda and Bob calculated the average time it took to slide straight down the hill on the snowboard with wax compared to the average time on the snowboard without wax.\nFigure: snowboarding down a hill. Identify the question that Linda and Bob's experiment can best answer."
+    },
+    {
+      "image_path": "images/MathVista/18.png",
+      "input_text": "what is the highest amount this class measures?"
+    },
+    {
+      "image_path": "images/MathVista/19.png",
+      "input_text": "Is the sum of smallest two bar is greater then the largest bar?"
+    },
+    {
+      "image_path": "images/MathVista/20.png",
+      "input_text": "Fill in the blank to describe the model. The model has 4 dots divided into 2 equal groups. There are (_) dots in each group."
+    },
+    {
+      "image_path": "images/MathVista/21.png",
+      "input_text": "How many people in the image were born after the end of World War II?"
+    },
+    {
+      "image_path": "images/MathVista/22.png",
+      "input_text": "The derivative of f(x) at x=2 is ____ that at x=5"
+    },
+    {
+      "image_path": "images/MathVista/23.png",
+      "input_text": "Is Periwinkle the maximum?"
+    },
+    {
+      "image_path": "images/MathVista/24.png",
+      "input_text": "Is Medium Periwinkle the smoothest?"
+    },
+    {
+      "image_path": "images/MathVista/25.png",
+      "input_text": "Is Black greater than Deep Sky Blue?"
+    },
+    {
+      "image_path": "images/MathVista/26.png",
+      "input_text": "What is the age gap between these two people in image?"
+    },
+    {
+      "image_path": "images/MathVista/27.png",
+      "input_text": "$\\overline{AB}$ is a diameter, $AC=8$ inches, and $BC=15$ inches. Find the radius of the circle."
+    },
+    {
+      "image_path": "images/MathVista/28.png",
+      "input_text": "What is the age gap between these two people in image?"
+    },
+    {
+      "image_path": "images/MathVista/29.png",
+      "input_text": "As shown in the figure, the two chords AB and CD in the circle intersect at E, \u2220D = 35.0, \u2220AEC = 105.0, then \u2220C = ()"
+    },
+    {
+      "image_path": "images/MathVista/30.png",
+      "input_text": "Are there more big red rubber double buss in front of the large red double bus than big green things?"
+    },
+    {
+      "image_path": "images/MathVista/31.png",
+      "input_text": "\u5982\u56fe\uff0c\u5728ABCD\u4e2d\uff0cAB\uff1dAC\uff0c\u2220CAB\uff1d40\u00b0\uff0c\u5219\u2220D\u7684\u5ea6\u6570\u662f\uff08\uff09"
+    },
+    {
+      "image_path": "images/MathVista/32.png",
+      "input_text": "Use a sector paper sheet with a central angle of 120.0 and a radius of 6.0 to roll into a conical bottomless paper cap (as shown in the picture), then the bottom perimeter of the paper cap is ()"
+    },
+    {
+      "image_path": "images/MathVista/33.png",
+      "input_text": "Is this function continuous at each point?"
+    },
+    {
+      "image_path": "images/MathVista/34.png",
+      "input_text": "\u5982\u56fe\uff0cAB\u662f\u2299O\u7684\u76f4\u5f84\uff0cEF\uff0cEB\u662f\u2299O\u7684\u5f26\uff0c\u70b9E\u662fFEB\u7684\u4e2d\u70b9\uff0cEF\u4e0eAB\u4ea4\u4e8e\u70b9C\uff0c\u8fde\u63a5OF\uff0c\u82e5\u2220AOF\uff1d40\u00b0\uff0c\u5219\u2220F\u7684\u5ea6\u6570\u662f\uff08\uff09"
+    },
+    {
+      "image_path": "images/MathVista/35.png",
+      "input_text": "What is the age gap between these two people in image?"
+    },
+    {
+      "image_path": "images/MathVista/36.png",
+      "input_text": "What is the limit as x approaches -1?"
+    },
+    {
+      "image_path": "images/MathVista/37.png",
+      "input_text": "How many bars have values smaller than 6?"
+    },
+    {
+      "image_path": "images/MathVista/38.png",
+      "input_text": "Is this function odd or even?"
+    },
+    {
+      "image_path": "images/MathVista/39.png",
+      "input_text": "Subtract all brown blocks. Subtract all large blue rubber things. How many objects are left?"
+    },
+    {
+      "image_path": "images/MathVista/40.png",
+      "input_text": "What is the age gap between these two people in image?"
+    },
+    {
+      "image_path": "images/MathVista/41.png",
+      "input_text": "What is the age gap between these two people in image?"
+    },
+    {
+      "image_path": "images/MathVista/42.png",
+      "input_text": "Use the graph to answer the question below. Which month is the wettest on average in Christchurch?"
+    },
+    {
+      "image_path": "images/MathVista/43.png",
+      "input_text": "Chase wants to buy 4 kilograms of oval beads and 5 kilograms of star-shaped beads. How much will he spend? (Unit: $)"
+    },
+    {
+      "image_path": "images/MathVista/44.png",
+      "input_text": "An administrator at the Department of Motor Vehicles (DMV) tracked the average wait time from month to month. According to the table, what was the rate of change between August and September? (Unit: minutes per month)"
+    },
+    {
+      "image_path": "images/MathVista/45.png",
+      "input_text": "What would happen to the population of adult spiders if predator ate all the spider eggs?"
+    },
+    {
+      "image_path": "images/MathVista/46.png",
+      "input_text": "Subtract all rubber balls. Subtract all yellow shiny things. How many objects are left?"
+    },
+    {
+      "image_path": "images/MathVista/47.png",
+      "input_text": "Find $m \\angle 3$."
+    },
+    {
+      "image_path": "images/MathVista/48.png",
+      "input_text": "What is the sum of the digits on either end of the sign in the corner?"
+    },
+    {
+      "image_path": "images/MathVista/49.png",
+      "input_text": "Based on the food web, what would likely happen if the number of large roach would decrease?"
+    },
+    {
+      "image_path": "images/MathVista/50.png",
+      "input_text": "Is the number of gray rubber objects in front of the small yellow aeroplane greater than the number of big cyan matte fighters?"
+    },
+    {
+      "image_path": "images/MathVista/51.png",
+      "input_text": "Subtract all big red metallic spheres. Subtract all big brown matte things. How many objects are left?"
+    },
+    {
+      "image_path": "images/MathVista/52.png",
+      "input_text": "What is the age gap between these two people in image?"
+    },
+    {
+      "image_path": "images/MathVista/53.png",
+      "input_text": "In the figure above, the ratio of the length of line AB to the length of line AC is 2 : 5. If AC = 25, what is the length of line AB?"
+    },
+    {
+      "image_path": "images/MathVista/54.png",
+      "input_text": "\u5982\u56fe\uff0c\u4e00\u5757\u76f4\u89d2\u4e09\u89d2\u677f60\u00b0\u7684\u89d2\u7684\u9876\u70b9A\u4e0e\u76f4\u89d2\u9876\u70b9C\u5206\u522b\u5728\u4e24\u5e73\u884c\u7ebfFG\uff0cDE\u4e0a\uff0c\u659c\u8fb9AB\u5e73\u5206\u2220CAG\uff0c\u4ea4\u76f4\u7ebfDE\u4e8e\u70b9H\uff0c\u5219\u2220BCH\u7684\u5927\u5c0f\u4e3a\uff08\uff09"
+    },
+    {
+      "image_path": "images/MathVista/55.png",
+      "input_text": "What is the perimeter of the rectangle?"
+    },
+    {
+      "image_path": "images/MathVista/56.png",
+      "input_text": "Subtract all small balls. Subtract all blue rubber things. How many objects are left?"
+    },
+    {
+      "image_path": "images/MathVista/57.png",
+      "input_text": "Does Firebrick have the maximum area under the curve?"
+    },
+    {
+      "image_path": "images/MathVista/58.png",
+      "input_text": "As shown in the figure, AB is the diameter of \u2299O, CD is the chord of \u2299O, \u2220ADC = 26.0, then the degree of \u2220CAB is ()"
+    },
+    {
+      "image_path": "images/MathVista/59.png",
+      "input_text": "What is the age gap between these two people in image?"
+    },
+    {
+      "image_path": "images/MathVista/60.png",
+      "input_text": "Is Coral the roughest?"
+    },
+    {
+      "image_path": "images/MathVista/61.png",
+      "input_text": "\u5982\u56fe\uff0cE\uff0cF\u5206\u522b\u662f\u83f1\u5f62ABCD\u7684\u8fb9AB\uff0cAD\u7684\u4e2d\u70b9\uff0c\u4e14AB\uff1d5\uff0cAC\uff1d6\uff0e\u5219EF\u7684\u957f\u4e3a\uff08\uff09"
+    },
+    {
+      "image_path": "images/MathVista/62.png",
+      "input_text": "Subtract all red matte cubes. Subtract all small green metal objects. How many objects are left?"
+    },
+    {
+      "image_path": "images/MathVista/63.png",
+      "input_text": "The diagrams below show two pure samples of gas in identical closed, rigid containers. Each colored ball represents one gas particle. Both samples have the same number of particles. Compare the average kinetic energies of the particles in each sample. Which sample has the higher temperature?"
+    },
+    {
+      "image_path": "images/MathVista/64.png",
+      "input_text": "is f(3) > 0?"
+    },
+    {
+      "image_path": "images/MathVista/65.png",
+      "input_text": "Choose the answer for the missing picture."
+    },
+    {
+      "image_path": "images/MathVista/66.png",
+      "input_text": "What is the perimeter of the square?"
+    },
+    {
+      "image_path": "images/MathVista/67.png",
+      "input_text": "\u5c06\u4e00\u6839\u957f\u5ea6\u4e3a16cm\u81ea\u7136\u4f38\u76f4\u7684\u5f39\u6027\u76ae\u7b4bAB\u4e24\u7aef\u56fa\u5b9a\u5728\u6c34\u5e73\u7684\u684c\u9762\u4e0a\uff0c\u7136\u540e\u628a\u4e2d\u70b9C\u7ad6\u76f4\u5411\u4e0a\u62c9\u53476cm\u81f3D\u70b9\uff08\u5982\u56fe\uff09\uff0c\u5219\u8be5\u5f39\u6027\u76ae\u7b4b\u88ab\u62c9\u957f\u4e86\uff08\uff09"
+    },
+    {
+      "image_path": "images/MathVista/68.png",
+      "input_text": "Subtract all big matte balls. Subtract all green rubber objects. How many objects are left?"
+    },
+    {
+      "image_path": "images/MathVista/69.png",
+      "input_text": "What is the age gap between these two people in image?"
+    },
+    {
+      "image_path": "images/MathVista/70.png",
+      "input_text": "What is the perimeter of the rectangle?"
+    },
+    {
+      "image_path": "images/MathVista/71.png",
+      "input_text": "A real estate agent drove around the neighborhood and counted the number of houses on each block. How many blocks have exactly 36 houses? (Unit: blocks)"
+    },
+    {
+      "image_path": "images/MathVista/72.png",
+      "input_text": "Complete the matrix."
+    },
+    {
+      "image_path": "images/MathVista/73.png",
+      "input_text": "What is the difference of largest and smallest bar?"
+    },
+    {
+      "image_path": "images/MathVista/74.png",
+      "input_text": "Is Sky Blue less than Web Maroon?"
+    },
+    {
+      "image_path": "images/MathVista/75.png",
+      "input_text": "What happens to fish if pelicans increase?"
+    },
+    {
+      "image_path": "images/MathVista/76.png",
+      "input_text": "Which year showed the largest difference in the data points between the two lines"
+    },
+    {
+      "image_path": "images/MathVista/77.png",
+      "input_text": "Find the missing value."
+    },
+    {
+      "image_path": "images/MathVista/78.png",
+      "input_text": "As shown in the figure, points A, B, C, and D are on circle O, and point E is on the extended line of AD. If \u2220ABC = 60.0, then the degree of \u2220CDE is ()"
+    },
+    {
+      "image_path": "images/MathVista/79.png",
+      "input_text": "According to the food web, what will happen if all the algae died due to pesticides?"
+    },
+    {
+      "image_path": "images/MathVista/80.png",
+      "input_text": "What is the value of r at theta=3*pi/2?"
+    },
+    {
+      "image_path": "images/MathVista/81.png",
+      "input_text": "A square is inscribed in a circle of area 18$\\pi$ square units. Find the length of a side of the square."
+    },
+    {
+      "image_path": "images/MathVista/82.png",
+      "input_text": "Is the number of shiny buss less than the number of matte things?"
+    },
+    {
+      "image_path": "images/MathVista/83.png",
+      "input_text": "ABCD is a square. Inscribed Circle center is O. Find the the angle of \u2220AMK. Return the numeric value."
+    },
+    {
+      "image_path": "images/MathVista/84.png",
+      "input_text": "How many countries have people working for more than 35 hours over the years?"
+    },
+    {
+      "image_path": "images/MathVista/85.png",
+      "input_text": "Which model has the highest Acc score when Pretrain Loss is equal to 1.80?"
+    },
+    {
+      "image_path": "images/MathVista/86.png",
+      "input_text": "Look at the table. Then answer the question. At a price of $790, is there a shortage or a surplus?'"
+    },
+    {
+      "image_path": "images/MathVista/87.png",
+      "input_text": "A square is tangent to a line at point P in the figure above. What is the value of x?"
+    },
+    {
+      "image_path": "images/MathVista/88.png",
+      "input_text": "How many miles per gallon do an average city bus get?"
+    },
+    {
+      "image_path": "images/MathVista/89.png",
+      "input_text": "Subtract all yellow matte blocks. Subtract all tiny brown cylinders. How many objects are left?"
+    },
+    {
+      "image_path": "images/MathVista/90.png",
+      "input_text": "Is the number of brown suvs less than the number of brown rubber school buss?"
+    },
+    {
+      "image_path": "images/MathVista/91.png",
+      "input_text": "Do the windows have a geometric shape that most houses have?"
+    },
+    {
+      "image_path": "images/MathVista/92.png",
+      "input_text": "What's the computing and wirless total for semiconductor demand in 2014?"
+    },
+    {
+      "image_path": "images/MathVista/93.png",
+      "input_text": "\u5982\u56fe\uff0cD\u4e3a\u25b3ABC\u5185\u4e00\u70b9\uff0cCD\u5e73\u5206\u2220ACB\uff0cBD\u22a5CD\uff0c\u2220A\uff1d\u2220ABD\uff0c\u82e5\u2220DBC\uff1d54\u00b0\uff0c\u5219\u2220A\u7684\u5ea6\u6570\u4e3a\uff08\uff09"
+    },
+    {
+      "image_path": "images/MathVista/94.png",
+      "input_text": "As shown in the figure, the straight lines AB and CD intersect at point O, OD bisects \u2220AOE, \u2220BOC = 50.0, then \u2220EOB = ()"
+    },
+    {
+      "image_path": "images/MathVista/95.png",
+      "input_text": "How many times Dissatisfied more than satisfied?"
+    },
+    {
+      "image_path": "images/MathVista/96.png",
+      "input_text": "How many algorithms have accuracies higher than 9?"
+    },
+    {
+      "image_path": "images/MathVista/97.png",
+      "input_text": "Find the value of the square in the figure."
+    },
+    {
+      "image_path": "images/MathVista/98.png",
+      "input_text": "Which cat is larger?"
+    },
+    {
+      "image_path": "images/MathVista/99.png",
+      "input_text": "What is the sum of all the values in the ruling group?"
+    },
+    {
+      "image_path": "images/MMStar/0.jpg",
+      "input_text": "Which option describe the object relationship in the image correctly?\nOptions: A: The suitcase is on the book., B: The suitcase is beneath the cat., C: The suitcase is beneath the bed., D: The suitcase is beneath the book."
+    },
+    {
+      "image_path": "images/MMStar/1.jpg",
+      "input_text": "What is the main feature in the background of the image?\nOptions: A: A park bench near the water., B: A couple sitting on a bench., C: A body of water and the Golden Gate Bridge., D: A mountain in the distance."
+    },
+    {
+      "image_path": "images/MMStar/2.jpg",
+      "input_text": "What seems to be the theme of the image?\nOptions: A: Hanging Posters, B: Music, C: Home decoration, D: Playing guitar"
+    },
+    {
+      "image_path": "images/MMStar/3.jpg",
+      "input_text": "What is the most prominent feature in the image?\nOptions: A: The skyline, B: The golf course, C: The trees, D: The person"
+    },
+    {
+      "image_path": "images/MMStar/4.jpg",
+      "input_text": "What is the center of focus in the image?\nOptions: A: A man writing in a book, B: A boy with his head in his hands surrounded by books, C: A cluttered desk with books and a pen, D: A stack of books covering a young man's face"
+    },
+    {
+      "image_path": "images/MMStar/5.jpg",
+      "input_text": "What is the main subject of the flyer seen in the image?\nOptions: A: Hair products, B: Makeup products, C: Spa services, D: Skin products"
+    },
+    {
+      "image_path": "images/MMStar/6.jpg",
+      "input_text": "What is the overall theme of the image?\nOptions: A: A woman in different polka dot dresses, B: A stone wall along a stone path, C: A woman in an outdoor setting, D: A house with a black roof"
+    },
+    {
+      "image_path": "images/MMStar/7.jpg",
+      "input_text": "What is the primary subject in this image?\nOptions: A: a guitar, B: a man on stage, C: a microphone, D: a concert"
+    },
+    {
+      "image_path": "images/MMStar/8.jpg",
+      "input_text": "What is the overall theme of the image?\nOptions: A: A businessman with a unique face, B: A man in a formal dress with a beard, C: An actor with a cut on his face, D: A man with a diagram of his face"
+    },
+    {
+      "image_path": "images/MMStar/9.jpg",
+      "input_text": "What feeling is represented in this image?\nOptions: A: engaged, B: distressed, C: angry, D: sad"
+    },
+    {
+      "image_path": "images/MMStar/10.jpg",
+      "input_text": "What time of day is it in the image?\nOptions: A: Noon, B: Evening, C: Night, D: Dawn"
+    },
+    {
+      "image_path": "images/MMStar/11.jpg",
+      "input_text": "What is the dominant feature in the image?\nOptions: A: The bridge, B: The lake, C: The city skyline, D: The buildings"
+    },
+    {
+      "image_path": "images/MMStar/12.jpg",
+      "input_text": "What is the main focus of this image?\nOptions: A: The grassy hill, B: The sculpture, C: The fence, D: The building"
+    },
+    {
+      "image_path": "images/MMStar/13.jpg",
+      "input_text": "Which mood does this image convey?\nOptions: A: Sad, B: Cozy, C: Happy, D: Angry"
+    },
+    {
+      "image_path": "images/MMStar/14.jpg",
+      "input_text": "What is the main subject of the image?\nOptions: A: Sky, B: Water, C: Sun, D: Clouds"
+    },
+    {
+      "image_path": "images/MMStar/15.jpg",
+      "input_text": "What object dominates the image in the foreground?\nOptions: A: A rocky and grassy field, B: Hills in the distance, C: A dirt road leading up a grassy hill to a rocky path, D: A large grey rock"
+    },
+    {
+      "image_path": "images/MMStar/16.jpg",
+      "input_text": "What feeling is shown in this image?\nOptions: A: engaged, B: distressed, C: angry, D: love"
+    },
+    {
+      "image_path": "images/MMStar/17.jpg",
+      "input_text": "What is the overall theme of the image?\nOptions: A: Beach vacation, B: Athletic lifestyle, C: Summer fashion, D: Urban street style"
+    },
+    {
+      "image_path": "images/MMStar/18.jpg",
+      "input_text": "What emotion is illustrated in this image?\nOptions: A: love, B: anger, C: happy, D: sad"
+    },
+    {
+      "image_path": "images/MMStar/19.jpg",
+      "input_text": "<image 1> Which of the following is the most accurate statement of the cartoonist's meaning? \nOptions: A: World War I is the crime of the ages, B: ALl nations involved in World War I at its outbreak are to blame for it, C: Russia and Austria are blamed unfairly, D: The nations of Europe are blaming one another"
+    },
+    {
+      "image_path": "images/MMStar/20.jpg",
+      "input_text": "What is the primary focus of the image?\nOptions: A: A woman riding a horse on a beach at sunset, B: A man riding a horse on a beach at sunset, C: A couple riding horses on a beach at sunset, D: A horse on a beach at sunset"
+    },
+    {
+      "image_path": "images/MMStar/21.jpg",
+      "input_text": "What is the overall theme of this image?\nOptions: A: Sports, B: Sunset, C: Nature, D: Kids playing"
+    },
+    {
+      "image_path": "images/MMStar/22.jpg",
+      "input_text": "What is the main color scheme of the image?\nOptions: A: Shades of blue and green, B: Bright oranges and pinks, C: Various shades of gray and black, D: A rainbow of vivid colors"
+    },
+    {
+      "image_path": "images/MMStar/23.jpg",
+      "input_text": "What is the overall mood of the image?\nOptions: A: Neutral, B: Somber, C: Tense, D: Joyful"
+    },
+    {
+      "image_path": "images/MMStar/24.jpg",
+      "input_text": "Which action is performed in this image?\nOptions: A: marching, B: playing cymbals, C: long jump, D: cheerleading"
+    },
+    {
+      "image_path": "images/MMStar/25.jpg",
+      "input_text": "What is the weather like in the image?\nOptions: A: Snowy, B: Cloudy, C: Rainy, D: Sunny"
+    },
+    {
+      "image_path": "images/MMStar/26.jpg",
+      "input_text": "What is the main focus of the image?\nOptions: A: the woman's phone, B: the woman's hairstyle, C: the woman's sweater, D: the background scenery"
+    },
+    {
+      "image_path": "images/MMStar/27.jpg",
+      "input_text": "What is happening in the image?\nOptions: A: A group of men are playing soccer on a field., B: A football player is kicking a ball., C: A soccer player is practicing ball control at the stadium., D: An Olympic athlete is competing in a soccer match."
+    },
+    {
+      "image_path": "images/MMStar/28.jpg",
+      "input_text": "What is the primary activity depicted in the image?\nOptions: A: A crane lifting a box from a building, B: A man on a truck operating a crane to lift a box from a building, C: A crane lifting a house at sunset, D: A man on a balcony of a house under construction in the city at sunset"
+    },
+    {
+      "image_path": "images/MMStar/29.jpg",
+      "input_text": "What is the main purpose of this garden?\nOptions: A: A venue for outdoor events, B: A place for sports activities, C: A spot for quiet and peaceful recreation, D: A location for plant research and study"
+    },
+    {
+      "image_path": "images/MMStar/30.jpg",
+      "input_text": "What is the prominent feature of the setting in the image?\nOptions: A: A bright ceiling light, B: A glass window, C: A large white curtain, D: A black speaker"
+    },
+    {
+      "image_path": "images/MMStar/31.jpg",
+      "input_text": "Which of the following words best describes the theme of this image?\nOptions: A: Salad, B: Fruit, C: Healthy, D: Chicken"
+    },
+    {
+      "image_path": "images/MMStar/32.jpg",
+      "input_text": "What is the predominant feature in the image?\nOptions: A: Cars, B: People, C: Buildings, D: Skyscrapers"
+    },
+    {
+      "image_path": "images/MMStar/33.jpg",
+      "input_text": "What kind of environment is depicted in the image?\nOptions: A: A historical site, B: A religious location, C: A residential area, D: A garden"
+    },
+    {
+      "image_path": "images/MMStar/34.jpg",
+      "input_text": "What is the dominant color in the image?\nOptions: A: Red, B: Blue, C: Green, D: Black"
+    },
+    {
+      "image_path": "images/MMStar/35.jpg",
+      "input_text": "What is the dominant color in the image?\nOptions: A: White, B: Blue, C: Brown, D: Black"
+    },
+    {
+      "image_path": "images/MMStar/36.jpg",
+      "input_text": "What is the overall scene depicted in this image?\nOptions: A: A group of people ice skating on a frozen lake surrounded by snowy trees and hills, B: A small town during a winter snowfall with snow-covered buildings and trees, C: A busy city street during Christmas time with decorated buildings and light displays, D: A ski resort town with snowy mountains and ski lifts visible in the background"
+    },
+    {
+      "image_path": "images/MMStar/37.jpg",
+      "input_text": "What is the predominant color in this image?\nOptions: A: Blue, B: White, C: Brown, D: Green"
+    },
+    {
+      "image_path": "images/MMStar/38.jpg",
+      "input_text": "Which of the following best describes the view from the deck?\nOptions: A: A view of a forest, B: A view of the cityscape, C: A view of the mountains, D: A view of a body of water"
+    },
+    {
+      "image_path": "images/MMStar/39.jpg",
+      "input_text": "What is the subject of the image?\nOptions: A: A person on stage playing guitar, B: A group of people playing music on stage, C: A group of people on stage playing guitars and singing, D: A group of people on stage playing music at night"
+    },
+    {
+      "image_path": "images/MMStar/40.jpg",
+      "input_text": "What type of scene is depicted in this image?\nOptions: A: A workspace, B: A beach vacation, C: A tropical restaurant, D: A desert oasis"
+    },
+    {
+      "image_path": "images/MMStar/41.jpg",
+      "input_text": "What is the general theme of this image?\nOptions: A: Candy buffet, B: Ice cream sundae, C: Yogurt containers, D: Fruit desserts"
+    },
+    {
+      "image_path": "images/MMStar/42.jpg",
+      "input_text": "Which image shows the highest contrast?\nOptions: A: upper left, B: upper right, C: down left, D: down right"
+    },
+    {
+      "image_path": "images/MMStar/43.jpg",
+      "input_text": "Based on the image, which statement best describes the likely purpose of the setting?\nOptions: A: A photoshoot for greeting cards, B: A scientific research site, C: A festive celebration, D: A picnic spot for a group of people"
+    },
+    {
+      "image_path": "images/MMStar/44.jpg",
+      "input_text": "What kind of sport is being played in this image?\nOptions: A: Soccer, B: Basketball, C: Football (American), D: Rugby"
+    },
+    {
+      "image_path": "images/MMStar/45.jpg",
+      "input_text": "What is the main focus of the image?\nOptions: A: A person playing a guitar in front of a choir, B: A choir singing on a stage, C: A man sitting in a chair playing a guitar, D: A man playing a guitar in front of a group of people"
+    },
+    {
+      "image_path": "images/MMStar/46.jpg",
+      "input_text": "Which image shows the highest sharpness?\nOptions: A: upper left, B: upper right, C: down left, D: down right"
+    },
+    {
+      "image_path": "images/MMStar/47.jpg",
+      "input_text": "What kind of weather is depicted in the picture?\nOptions: A: sunny, B: rainy, C: windy, D: snowy"
+    },
+    {
+      "image_path": "images/MMStar/48.jpg",
+      "input_text": "What is the main focus of the image?\nOptions: A: The sidewalk, B: The shoes, C: The ballerina, D: The studio"
+    },
+    {
+      "image_path": "images/MMStar/49.jpg",
+      "input_text": "Which image is more brightful?\nOptions: A: The first image, B: The second image, C: nan, D: nan"
+    },
+    {
+      "image_path": "images/MMStar/50.jpg",
+      "input_text": "which image is more colorful?\nOptions: A: The first image, B: The second image, C: nan, D: nan"
+    },
+    {
+      "image_path": "images/MMStar/51.jpg",
+      "input_text": "what style is depicted in this image?\nOptions: A: impressionism, B: post-Impressionism, C: modernism, D: dadaism"
+    },
+    {
+      "image_path": "images/MMStar/52.jpg",
+      "input_text": "What is the main focus of the image?\nOptions: A: A fountain with a horse and dragon statue, B: A building with sculptures in the front yard, C: A park with a statue of a man on a horse, D: A statue of a lion and a dragon in front of a building"
+    },
+    {
+      "image_path": "images/MMStar/53.jpg",
+      "input_text": "Which emotion is being depicted in this image?\nOptions: A: happiness, B: sadness, C: anger, D: loneliness"
+    },
+    {
+      "image_path": "images/MMStar/54.jpg",
+      "input_text": "Which term matches the picture?\nOptions: A: basket star, B: brittle star, C: nan, D: nan"
+    },
+    {
+      "image_path": "images/MMStar/55.jpg",
+      "input_text": "What is the main focus of the image?\nOptions: A: A woman and two girls standing on a red carpet with an umbrella., B: A person and their family at a premiere standing under an umbrella in the rain., C: Two girls holding an umbrella on a red carpet., D: People standing on a red carpet and an actress holding her daughter under an umbrella."
+    },
+    {
+      "image_path": "images/MMStar/56.jpg",
+      "input_text": "What color dominates the logo seen on the wall?\nOptions: A: Red, B: Black and White, C: Yellow, D: Blue"
+    },
+    {
+      "image_path": "images/MMStar/57.jpg",
+      "input_text": "What is the main theme of the image?\nOptions: A: Nature, B: Transportation, C: Travel, D: Outdoor recreation"
+    },
+    {
+      "image_path": "images/MMStar/58.jpg",
+      "input_text": "Based on the image, what could be an appropriate title for this scene?\nOptions: A: \"A Peaceful Countryside Gathering\", B: \"A Bustling City Square\", C: \"A Day at the Beach\", D: \"A Mountain Adventure\""
+    },
+    {
+      "image_path": "images/MMStar/59.jpg",
+      "input_text": "What is the main color of the image?\nOptions: A: Red, B: Green, C: Black, D: White"
+    },
+    {
+      "image_path": "images/MMStar/60.jpg",
+      "input_text": "What is the main color scheme of this image?\nOptions: A: Black and silver, B: White and blue, C: Brown and red, D: Red and black"
+    },
+    {
+      "image_path": "images/MMStar/61.jpg",
+      "input_text": "What is the overall mood of this image?\nOptions: A: Excitement and liveliness, B: Fear and anxiety, C: Calmness and relaxation, D: Confusion and chaos"
+    },
+    {
+      "image_path": "images/MMStar/62.jpg",
+      "input_text": "What is the main feature of this image?\nOptions: A: A sailboat on its side in the ocean at sunset, B: A sailboat in the water with the sun over the ocean and rocks, C: A broken sailboat resting on a rocky shore during sunset, D: A rocky shore with a sailboat in the distance at sunrise"
+    },
+    {
+      "image_path": "images/MMStar/63.jpg",
+      "input_text": "What is the prominent color in the image?\nOptions: A: Blue, B: Green, C: Grey, D: White"
+    },
+    {
+      "image_path": "images/MMStar/64.jpg",
+      "input_text": "What is the main feature of the image?\nOptions: A: People on the rooftop of a building, B: A large area of ferns, C: A garden with trees, plants and a building, D: A blue cloudy sky"
+    },
+    {
+      "image_path": "images/MMStar/65.jpg",
+      "input_text": "What is the dominant color in the image?\nOptions: A: Yellow, B: Black, C: Red, D: Green"
+    },
+    {
+      "image_path": "images/MMStar/66.jpg",
+      "input_text": "What is the main feature of the pictured place?\nOptions: A: Large windows with views of the ocean, B: A swimming pool in the living room, C: A decorative green bench, D: A mountain in the distance"
+    },
+    {
+      "image_path": "images/MMStar/67.jpg",
+      "input_text": "What is the dominant color scheme in this image?\nOptions: A: White and blue, B: Blue and green, C: Brown and yellow, D: Pink and orange"
+    },
+    {
+      "image_path": "images/MMStar/68.jpg",
+      "input_text": "What is the overall mood or atmosphere of the image?\nOptions: A: Joyful and energetic, B: Intimate and cozy, C: Dark and gloomy, D: Serene and peaceful"
+    },
+    {
+      "image_path": "images/MMStar/69.jpg",
+      "input_text": "Which mood does this image convey?\nOptions: A: Sad, B: Anxious, C: Happy, D: Angry"
+    },
+    {
+      "image_path": "images/MMStar/70.jpg",
+      "input_text": "What is the main object present in the foreground of the image?\nOptions: A: A surgical mask, B: A nurse, C: A surgical light, D: A surgical gown"
+    },
+    {
+      "image_path": "images/MMStar/71.jpg",
+      "input_text": "What is the primary scene depicted in the image?\nOptions: A: A group of people taking pictures of a statue in a plaza, B: A large crowd taking pictures of each other in an outdoor event, C: A group of people taking pictures of a Christmas tree in a plaza, D: A group of people taking pictures of a famous building in New York City"
+    },
+    {
+      "image_path": "images/MMStar/72.jpg",
+      "input_text": "What kind of room is depicted in the image?\nOptions: A: A living room, B: A kitchen, C: A bedroom, D: A bathroom"
+    },
+    {
+      "image_path": "images/MMStar/73.jpg",
+      "input_text": "Which image shows the highest colorfulness?\nOptions: A: upper left, B: upper right, C: down left, D: down right"
+    },
+    {
+      "image_path": "images/MMStar/74.jpg",
+      "input_text": "What is the predominant sport being played in the image?\nOptions: A: football, B: basketball, C: soccer, D: baseball"
+    },
+    {
+      "image_path": "images/MMStar/75.jpg",
+      "input_text": "What is the predominant feature of the forest in the image?\nOptions: A: The ground is dry and covered in brown dirt, B: The trees are all tall and bare with no leaves, C: The trees are covered in green ivy and climbing vines, D: The bark on the trees is white and peeling"
+    },
+    {
+      "image_path": "images/MMStar/76.jpg",
+      "input_text": "What is the main theme of the image?\nOptions: A: Bearded men, B: Bathroom hygiene, C: Royal monarchy, D: Home decor"
+    },
+    {
+      "image_path": "images/MMStar/77.jpg",
+      "input_text": "What is happening in the image?\nOptions: A: A football player is tackling a soccer player, B: A soccer player is kicking a football, C: A group of men are playing soccer, D: A football player is dribbling the ball towards the goal"
+    },
+    {
+      "image_path": "images/MMStar/78.jpg",
+      "input_text": "What is the color theme of the bathroom?\nOptions: A: Gray and white, B: Beige and white, C: Black and white, D: Brown and white"
+    },
+    {
+      "image_path": "images/MMStar/79.jpg",
+      "input_text": "Where is the largest body of water in the image located?\nOptions: A: At the center of the image, B: On the bottom of the image, C: On the left side of the image, D: On the right side of the image"
+    },
+    {
+      "image_path": "images/MMStar/80.jpg",
+      "input_text": "What is the dominant color of the clothing worn by people in the image?\nOptions: A: White, B: Green, C: Red, D: Blue"
+    },
+    {
+      "image_path": "images/MMStar/81.jpg",
+      "input_text": "What is the most frequent color shown in the image?\nOptions: A: White, B: Brown, C: Blue, D: Green"
+    },
+    {
+      "image_path": "images/MMStar/82.jpg",
+      "input_text": "What is the overall theme of the image?\nOptions: A: Fashion, B: Wildlife, C: Nature, D: Photography"
+    },
+    {
+      "image_path": "images/MMStar/83.jpg",
+      "input_text": "What is the main object in the image?\nOptions: A: The guitar, B: The man, C: The woman, D: The person on stage"
+    },
+    {
+      "image_path": "images/MMStar/84.jpg",
+      "input_text": "What is the primary focus of the people in the image?\nOptions: A: Watching a performance, B: Standing in lines for a concert, C: Participating in a protest, D: Walking down the street"
+    },
+    {
+      "image_path": "images/MMStar/85.jpg",
+      "input_text": "What is the most prominent feature in the image?\nOptions: A: Sailboats, B: City skyline, C: Sky, D: Sun"
+    },
+    {
+      "image_path": "images/MMStar/86.jpg",
+      "input_text": "What is the most prominent feature in the image?\nOptions: A: a blue fence, B: a gate, C: a palm tree, D: a green wall"
+    },
+    {
+      "image_path": "images/MMStar/87.jpg",
+      "input_text": "What is the dominant color of the image?\nOptions: A: White, B: Green, C: Gray, D: Blue"
+    },
+    {
+      "image_path": "images/MMStar/88.jpg",
+      "input_text": "What is the main focus of the image?\nOptions: A: A woman standing in front of a brick wall, B: A woman standing in front of a green hedge, C: A garden with a lot of flowers and bushes, D: A bench surrounded by a lot of plants"
+    },
+    {
+      "image_path": "images/MMStar/89.jpg",
+      "input_text": "Which object is the most central in the image?\nOptions: A: Woman in white dress, B: Actor in a white dress on the red carpet at a festival, C: Refrigerator, D: Red Carpet"
+    },
+    {
+      "image_path": "images/MMStar/90.jpg",
+      "input_text": "What is the dominant color in the picture?\nOptions: A: Pink, B: Gray, C: Blue, D: Green"
+    },
+    {
+      "image_path": "images/MMStar/91.jpg",
+      "input_text": "What is the main subject of the image?\nOptions: A: A woman, B: A bed, C: A man and a woman, D: A girl"
+    },
+    {
+      "image_path": "images/MMStar/92.jpg",
+      "input_text": "Which category does this image belong to?\nOptions: A: medical CT image, B: 8-bit, C: digital art, D: painting"
+    },
+    {
+      "image_path": "images/MMStar/93.jpg",
+      "input_text": "What is the primary subject of the image?\nOptions: A: The sunrise, B: The grassy field, C: The trees, D: The fog"
+    },
+    {
+      "image_path": "images/MMStar/94.jpg",
+      "input_text": "What is the color of the majority of objects in the image?\nOptions: A: White, B: Gray, C: Blue, D: Green"
+    },
+    {
+      "image_path": "images/MMStar/95.jpg",
+      "input_text": "what style is depicted in this image?\nOptions: A: impressionism, B: post-Impressionism, C: modernism, D: dadaism"
+    },
+    {
+      "image_path": "images/MMStar/96.jpg",
+      "input_text": "What is the focus of the image?\nOptions: A: A traffic sign, B: A no entry sign, C: A group of trees, D: A lake"
+    },
+    {
+      "image_path": "images/MMStar/97.jpg",
+      "input_text": "Which mood does this image convey?\nOptions: A: Cozy, B: Anxious, C: Happy, D: Angry"
+    },
+    {
+      "image_path": "images/MMStar/98.jpg",
+      "input_text": "How many times is the object 'tree' detected in the attribute detections?\nOptions: A: Two, B: Three, C: Four, D: Five"
+    },
+    {
+      "image_path": "images/MMStar/99.jpg",
+      "input_text": "What is the main color theme of the scene?\nOptions: A: Red, B: Green, C: Blue, D: Yellow"
+    },
+    {
+      "image_path": "images/MMStar/100.jpg",
+      "input_text": "Which is the main topic of the image\nOptions: A: A woman surfing, B: A man skiting, C: A man surfing, D: A woman skiting"
+    },
+    {
+      "image_path": "images/MMStar/101.jpg",
+      "input_text": "What is the dominant color of the room?\nOptions: A: White, B: Green, C: Blue, D: Red"
+    },
+    {
+      "image_path": "images/MMStar/102.jpg",
+      "input_text": "Does the image depict a balcony?\nOptions: A: Yes, B: No, C: Cannot be determined, D: Not enough information"
+    },
+    {
+      "image_path": "images/MMStar/103.jpg",
+      "input_text": "What is the main feature in the given image?\nOptions: A: Green plants, B: Fog, C: Bushes, D: Trees"
+    },
+    {
+      "image_path": "images/MMStar/104.jpg",
+      "input_text": "What is the dominant color in the image?\nOptions: A: Blue, B: Yellow, C: Red, D: Green"
+    },
+    {
+      "image_path": "images/MMStar/105.jpg",
+      "input_text": "Which object can be found in the center of the image?\nOptions: A: Goalpost, B: Soccer ball, C: Referee, D: Crowd of people"
+    },
+    {
+      "image_path": "images/MMStar/106.jpg",
+      "input_text": "Which corner doesn't have any plates?\nOptions: A: top-right, B: top-left, C: bottom-left, D: bottom-right"
+    },
+    {
+      "image_path": "images/MMStar/107.jpg",
+      "input_text": "Which corner doesn't have any plates?\nOptions: A: top-right, B: top-left, C: bottom-left, D: bottom-right"
+    },
+    {
+      "image_path": "images/MMStar/108.jpg",
+      "input_text": "What is the relative position of the man and the child in this image?\nOptions: A: The man and the child are out of frame, B: The man is standing next to the child, C: The man is holding the child, D: The man is standing apart from the child"
+    },
+    {
+      "image_path": "images/MMStar/109.jpg",
+      "input_text": "How many different \"pointed\" kinds are there?\nOptions: A: 2, B: 4, C: 1, D: 3"
+    },
+    {
+      "image_path": "images/MMStar/110.jpg",
+      "input_text": "Which of the following objects is the closest to the apple in the image?\nOptions: A: Grilled caramel apple crunch on tin foil, B: Small jar in the middle, C: White and black wax paper, D: None of the above"
+    },
+    {
+      "image_path": "images/MMStar/111.jpg",
+      "input_text": "What is the predominant color of the image?\nOptions: A: Yellow, B: Black, C: White, D: Blue"
+    },
+    {
+      "image_path": "images/MMStar/112.jpg",
+      "input_text": "What is the primary focus of the image?\nOptions: A: The boats in the harbor, B: The castle on the island, C: The cloudy sky, D: The city on the coast"
+    },
+    {
+      "image_path": "images/MMStar/113.jpg",
+      "input_text": "Which country is highlighted?\nOptions: A: Saint Vincent and the Grenadines, B: Grenada, C: the Dominican Republic, D: Trinidad and Tobago"
+    },
+    {
+      "image_path": "images/MMStar/114.jpg",
+      "input_text": "What represents hazelnuts in the figure?\nOptions: A: D, B: G, C: C, D: A"
+    },
+    {
+      "image_path": "images/MMStar/115.jpg",
+      "input_text": "What is the main feature of the building in the image?\nOptions: A: The rooftop, B: The stone wall, C: The clock tower, D: The arched windows"
+    },
+    {
+      "image_path": "images/MMStar/116.jpg",
+      "input_text": "What type of event is depicted in the image?\nOptions: A: A political rally, B: A sports game, C: A protest march, D: A music festival"
+    },
+    {
+      "image_path": "images/MMStar/117.jpg",
+      "input_text": "What is the main focus of the image?\nOptions: A: The wooden frame with a variety of plants, B: The mirrors and frames on the wall, C: The planter hanging on the wooden wall, D: The color scheme of the image"
+    },
+    {
+      "image_path": "images/MMStar/118.jpg",
+      "input_text": "What is the occasion depicted in the image?\nOptions: A: New Year's Eve celebration, B: Christmas Eve party, C: Birthday celebration, D: Wedding reception"
+    },
+    {
+      "image_path": "images/MMStar/119.jpg",
+      "input_text": "What is the weather like in this image?\nOptions: A: Cloudy, B: Rainy, C: Clear, D: Windy"
+    },
+    {
+      "image_path": "images/MMStar/120.jpg",
+      "input_text": "How many police officers are in the image?\nOptions: A: 1, B: 0, C: 2, D: 3"
+    },
+    {
+      "image_path": "images/MMStar/121.jpg",
+      "input_text": "What is the main activity happening in this image?\nOptions: A: A couple of men are playing soccer, B: A group of people are having a picnic in the park, C: Two men are playing cricket, D: A group of people are playing volleyball"
+    },
+    {
+      "image_path": "images/MMStar/122.jpg",
+      "input_text": "What is the predominant feature in the image?\nOptions: A: Houses, B: The Sky, C: Mountains, D: Trees"
+    },
+    {
+      "image_path": "images/MMStar/123.jpg",
+      "input_text": "Where is the exit in the image?\nOptions: A: To the left of the green exit sign, B: To the right of the green exit sign, C: Behind the green exit sign with an arrow pointing to the left, D: Not visible in the image"
+    },
+    {
+      "image_path": "images/MMStar/124.jpg",
+      "input_text": "Which is the main topic of the image\nOptions: A: Driving cars, B: Driving buses, C: A driving bus, D: A driving car"
+    },
+    {
+      "image_path": "images/MMStar/125.jpg",
+      "input_text": "Which is the main topic of the image\nOptions: A: A toy bear and a toy dog, B: A toy bear and a toy chicken, C: A toy bear and a toy cat, D: A toy bear and a toy rabbit"
+    },
+    {
+      "image_path": "images/MMStar/126.jpg",
+      "input_text": "What is the general theme of the image?\nOptions: A: Beach party, B: Fair or festival, C: Wedding celebration, D: Night market"
+    },
+    {
+      "image_path": "images/MMStar/127.jpg",
+      "input_text": "What is the predominant feature of the image?\nOptions: A: Stage, B: People, C: Guitars, D: Dark Room"
+    },
+    {
+      "image_path": "images/MMStar/128.jpg",
+      "input_text": "What is the main event in the image?\nOptions: A: A theater play, B: A sporting event, C: A concert, D: A dance competition"
+    },
+    {
+      "image_path": "images/MMStar/129.jpg",
+      "input_text": "What is the dominant color of the image?\nOptions: A: White, B: Brown, C: Gray, D: Green"
+    },
+    {
+      "image_path": "images/MMStar/130.jpg",
+      "input_text": "What is the background of the image?\nOptions: A: A beach, B: A city street, C: A forest, D: A meadow"
+    },
+    {
+      "image_path": "images/MMStar/131.jpg",
+      "input_text": "What is the dominant color palette of the image?\nOptions: A: Red and black, B: Green and brown, C: White and pink, D: Blue and gray"
+    },
+    {
+      "image_path": "images/MMStar/132.jpg",
+      "input_text": "What is the predominant color in the image?\nOptions: A: White, B: Red, C: Blue, D: Silver"
+    },
+    {
+      "image_path": "images/MMStar/133.jpg",
+      "input_text": "What is the intended mood of this living room?\nOptions: A: Cozy and comfy, B: Bright and sunny, C: Dark and dramatic, D: Sleek and modern"
+    },
+    {
+      "image_path": "images/MMStar/134.jpg",
+      "input_text": "What is the weather like in the image?\nOptions: A: Cloudy and cool, B: Sunny and hot, C: Windy and stormy, D: Hazy and humid"
+    },
+    {
+      "image_path": "images/MMStar/135.jpg",
+      "input_text": "What is the primary focal point of this image?\nOptions: A: A dirt road lined with trees, B: A pathway through a park, C: A tree-lined pathway leading to a bench, D: A fence and gate leading to a driveway"
+    },
+    {
+      "image_path": "images/MMStar/136.jpg",
+      "input_text": "What is the sport being played in the image?\nOptions: A: Tennis, B: Soccer, C: Volleyball, D: Basketball"
+    },
+    {
+      "image_path": "images/MMStar/137.jpg",
+      "input_text": "What is the most dominant color in the image?\nOptions: A: Black, B: Blue, C: Red, D: White"
+    },
+    {
+      "image_path": "images/MMStar/138.jpg",
+      "input_text": "Which mood does this image convey?\nOptions: A: Sad, B: Anxious, C: Happy, D: Angry"
+    },
+    {
+      "image_path": "images/MMStar/139.jpg",
+      "input_text": "What emotion is portrayed in this image?\nOptions: A: happiness, B: sadness, C: anger, D: loneliness"
+    },
+    {
+      "image_path": "images/MMStar/140.jpg",
+      "input_text": "Which of the following emotions is shown in this image?\nOptions: A: weavy, B: lonely, C: happy, D: supportive"
+    },
+    {
+      "image_path": "images/MMStar/141.jpg",
+      "input_text": "Which image shows the highest contrast?\nOptions: A: upper left, B: upper right, C: down left, D: down right"
+    },
+    {
+      "image_path": "images/MMStar/142.jpg",
+      "input_text": "Which image is the brightest one?\nOptions: A: upper left, B: upper right, C: down left, D: down right"
+    },
+    {
+      "image_path": "images/MMStar/143.jpg",
+      "input_text": "Which image shows the highest sharpness?\nOptions: A: upper left, B: upper right, C: down left, D: down right"
+    },
+    {
+      "image_path": "images/MMStar/144.jpg",
+      "input_text": "Which image is the brightest one?\nOptions: A: upper left, B: upper right, C: down left, D: down right"
+    },
+    {
+      "image_path": "images/MMStar/145.jpg",
+      "input_text": "Which image shows the highest sharpness?\nOptions: A: upper left, B: upper right, C: down left, D: down right"
+    },
+    {
+      "image_path": "images/MMStar/146.jpg",
+      "input_text": "Which image shows the highest contrast?\nOptions: A: upper left, B: upper right, C: down left, D: down right"
+    },
+    {
+      "image_path": "images/MMStar/147.jpg",
+      "input_text": "Which image is the brightest one?\nOptions: A: upper left, B: upper right, C: down left, D: down right"
+    },
+    {
+      "image_path": "images/MMStar/148.jpg",
+      "input_text": "Which image shows the highest sharpness?\nOptions: A: upper left, B: upper right, C: down left, D: down right"
+    },
+    {
+      "image_path": "images/MMStar/149.jpg",
+      "input_text": "Which image shows the highest contrast?\nOptions: A: upper left, B: upper right, C: down left, D: down right"
+    },
+    {
+      "image_path": "images/OCRBench/0.jpeg",
+      "input_text": "what is written in the image?"
+    },
+    {
+      "image_path": "images/OCRBench/1.jpeg",
+      "input_text": "what is written in the image?"
+    },
+    {
+      "image_path": "images/OCRBench/2.jpeg",
+      "input_text": "what is written in the image?"
+    },
+    {
+      "image_path": "images/OCRBench/3.jpeg",
+      "input_text": "what is written in the image?"
+    },
+    {
+      "image_path": "images/OCRBench/4.jpeg",
+      "input_text": "what is written in the image?"
+    },
+    {
+      "image_path": "images/OCRBench/5.jpeg",
+      "input_text": "what is written in the image?"
+    },
+    {
+      "image_path": "images/OCRBench/6.jpeg",
+      "input_text": "what is written in the image?"
+    },
+    {
+      "image_path": "images/OCRBench/7.jpeg",
+      "input_text": "what is written in the image?"
+    },
+    {
+      "image_path": "images/OCRBench/8.jpeg",
+      "input_text": "what is written in the image?"
+    },
+    {
+      "image_path": "images/OCRBench/9.jpeg",
+      "input_text": "what is written in the image?"
+    },
+    {
+      "image_path": "images/OCRBench/10.jpeg",
+      "input_text": "what is written in the image?"
+    },
+    {
+      "image_path": "images/OCRBench/11.jpeg",
+      "input_text": "what is written in the image?"
+    },
+    {
+      "image_path": "images/OCRBench/12.jpeg",
+      "input_text": "what is written in the image?"
+    },
+    {
+      "image_path": "images/OCRBench/13.jpeg",
+      "input_text": "what is written in the image?"
+    },
+    {
+      "image_path": "images/OCRBench/14.jpeg",
+      "input_text": "what is written in the image?"
+    },
+    {
+      "image_path": "images/OCRBench/15.jpeg",
+      "input_text": "what is written in the image?"
+    },
+    {
+      "image_path": "images/OCRBench/16.jpeg",
+      "input_text": "what is written in the image?"
+    },
+    {
+      "image_path": "images/OCRBench/17.jpeg",
+      "input_text": "what is written in the image?"
+    },
+    {
+      "image_path": "images/OCRBench/18.jpeg",
+      "input_text": "what is written in the image?"
+    },
+    {
+      "image_path": "images/OCRBench/19.jpeg",
+      "input_text": "what is written in the image?"
+    },
+    {
+      "image_path": "images/OCRBench/20.jpeg",
+      "input_text": "what is written in the image?"
+    },
+    {
+      "image_path": "images/OCRBench/21.jpeg",
+      "input_text": "what is written in the image?"
+    },
+    {
+      "image_path": "images/OCRBench/22.jpeg",
+      "input_text": "what is written in the image?"
+    },
+    {
+      "image_path": "images/OCRBench/23.jpeg",
+      "input_text": "what is written in the image?"
+    },
+    {
+      "image_path": "images/OCRBench/24.jpeg",
+      "input_text": "what is written in the image?"
+    },
+    {
+      "image_path": "images/OCRBench/25.jpeg",
+      "input_text": "what is written in the image?"
+    },
+    {
+      "image_path": "images/OCRBench/26.jpeg",
+      "input_text": "what is written in the image?"
+    },
+    {
+      "image_path": "images/OCRBench/27.jpeg",
+      "input_text": "what is written in the image?"
+    },
+    {
+      "image_path": "images/OCRBench/28.jpeg",
+      "input_text": "what is written in the image?"
+    },
+    {
+      "image_path": "images/OCRBench/29.jpeg",
+      "input_text": "what is written in the image?"
+    },
+    {
+      "image_path": "images/OCRBench/30.jpeg",
+      "input_text": "what is written in the image?"
+    },
+    {
+      "image_path": "images/OCRBench/31.jpeg",
+      "input_text": "what is written in the image?"
+    },
+    {
+      "image_path": "images/OCRBench/32.jpeg",
+      "input_text": "what is written in the image?"
+    },
+    {
+      "image_path": "images/OCRBench/33.jpeg",
+      "input_text": "what is written in the image?"
+    },
+    {
+      "image_path": "images/OCRBench/34.jpeg",
+      "input_text": "what is written in the image?"
+    },
+    {
+      "image_path": "images/OCRBench/35.jpeg",
+      "input_text": "what is written in the image?"
+    },
+    {
+      "image_path": "images/OCRBench/36.jpeg",
+      "input_text": "what is written in the image?"
+    },
+    {
+      "image_path": "images/OCRBench/37.jpeg",
+      "input_text": "what is written in the image?"
+    },
+    {
+      "image_path": "images/OCRBench/38.jpeg",
+      "input_text": "what is written in the image?"
+    },
+    {
+      "image_path": "images/OCRBench/39.jpeg",
+      "input_text": "what is written in the image?"
+    },
+    {
+      "image_path": "images/OCRBench/40.jpeg",
+      "input_text": "what is written in the image?"
+    },
+    {
+      "image_path": "images/OCRBench/41.jpeg",
+      "input_text": "what is written in the image?"
+    },
+    {
+      "image_path": "images/OCRBench/42.jpeg",
+      "input_text": "what is written in the image?"
+    },
+    {
+      "image_path": "images/OCRBench/43.jpeg",
+      "input_text": "what is written in the image?"
+    },
+    {
+      "image_path": "images/OCRBench/44.jpeg",
+      "input_text": "what is written in the image?"
+    },
+    {
+      "image_path": "images/OCRBench/45.jpeg",
+      "input_text": "what is written in the image?"
+    },
+    {
+      "image_path": "images/OCRBench/46.jpeg",
+      "input_text": "what is written in the image?"
+    },
+    {
+      "image_path": "images/OCRBench/47.jpeg",
+      "input_text": "what is written in the image?"
+    },
+    {
+      "image_path": "images/OCRBench/48.jpeg",
+      "input_text": "what is written in the image?"
+    },
+    {
+      "image_path": "images/OCRBench/49.jpeg",
+      "input_text": "what is written in the image?"
+    },
+    {
+      "image_path": "images/OCRBench/50.jpeg",
+      "input_text": "what is written in the image?"
+    },
+    {
+      "image_path": "images/OCRBench/51.jpeg",
+      "input_text": "what is written in the image?"
+    },
+    {
+      "image_path": "images/OCRBench/52.jpeg",
+      "input_text": "what is written in the image?"
+    },
+    {
+      "image_path": "images/OCRBench/53.jpeg",
+      "input_text": "what is written in the image?"
+    },
+    {
+      "image_path": "images/OCRBench/54.jpeg",
+      "input_text": "what is written in the image?"
+    },
+    {
+      "image_path": "images/OCRBench/55.jpeg",
+      "input_text": "what is written in the image?"
+    },
+    {
+      "image_path": "images/OCRBench/56.jpeg",
+      "input_text": "what is written in the image?"
+    },
+    {
+      "image_path": "images/OCRBench/57.jpeg",
+      "input_text": "what is written in the image?"
+    },
+    {
+      "image_path": "images/OCRBench/58.jpeg",
+      "input_text": "what is written in the image?"
+    },
+    {
+      "image_path": "images/OCRBench/59.jpeg",
+      "input_text": "what is written in the image?"
+    },
+    {
+      "image_path": "images/OCRBench/60.jpeg",
+      "input_text": "what is written in the image?"
+    },
+    {
+      "image_path": "images/OCRBench/61.jpeg",
+      "input_text": "what is written in the image?"
+    },
+    {
+      "image_path": "images/OCRBench/62.jpeg",
+      "input_text": "what is written in the image?"
+    },
+    {
+      "image_path": "images/OCRBench/63.jpeg",
+      "input_text": "what is written in the image?"
+    },
+    {
+      "image_path": "images/OCRBench/64.jpeg",
+      "input_text": "what is written in the image?"
+    },
+    {
+      "image_path": "images/OCRBench/65.jpeg",
+      "input_text": "what is written in the image?"
+    },
+    {
+      "image_path": "images/OCRBench/66.jpeg",
+      "input_text": "what is written in the image?"
+    },
+    {
+      "image_path": "images/OCRBench/67.jpeg",
+      "input_text": "what is written in the image?"
+    },
+    {
+      "image_path": "images/OCRBench/68.jpeg",
+      "input_text": "what is written in the image?"
+    },
+    {
+      "image_path": "images/OCRBench/69.jpeg",
+      "input_text": "what is written in the image?"
+    },
+    {
+      "image_path": "images/OCRBench/70.jpeg",
+      "input_text": "what is written in the image?"
+    },
+    {
+      "image_path": "images/OCRBench/71.jpeg",
+      "input_text": "what is written in the image?"
+    },
+    {
+      "image_path": "images/OCRBench/72.jpeg",
+      "input_text": "what is written in the image?"
+    },
+    {
+      "image_path": "images/OCRBench/73.jpeg",
+      "input_text": "what is written in the image?"
+    },
+    {
+      "image_path": "images/OCRBench/74.jpeg",
+      "input_text": "what is written in the image?"
+    },
+    {
+      "image_path": "images/OCRBench/75.jpeg",
+      "input_text": "what is written in the image?"
+    },
+    {
+      "image_path": "images/OCRBench/76.jpeg",
+      "input_text": "what is written in the image?"
+    },
+    {
+      "image_path": "images/OCRBench/77.jpeg",
+      "input_text": "what is written in the image?"
+    },
+    {
+      "image_path": "images/OCRBench/78.jpeg",
+      "input_text": "what is written in the image?"
+    },
+    {
+      "image_path": "images/OCRBench/79.jpeg",
+      "input_text": "what is written in the image?"
+    },
+    {
+      "image_path": "images/OCRBench/80.jpeg",
+      "input_text": "what is written in the image?"
+    },
+    {
+      "image_path": "images/OCRBench/81.jpeg",
+      "input_text": "what is written in the image?"
+    },
+    {
+      "image_path": "images/OCRBench/82.jpeg",
+      "input_text": "what is written in the image?"
+    },
+    {
+      "image_path": "images/OCRBench/83.jpeg",
+      "input_text": "what is written in the image?"
+    },
+    {
+      "image_path": "images/OCRBench/84.jpeg",
+      "input_text": "what is written in the image?"
+    },
+    {
+      "image_path": "images/OCRBench/85.jpeg",
+      "input_text": "what is written in the image?"
+    },
+    {
+      "image_path": "images/OCRBench/86.jpeg",
+      "input_text": "what is written in the image?"
+    },
+    {
+      "image_path": "images/OCRBench/87.jpeg",
+      "input_text": "what is written in the image?"
+    },
+    {
+      "image_path": "images/OCRBench/88.jpeg",
+      "input_text": "what is written in the image?"
+    },
+    {
+      "image_path": "images/OCRBench/89.jpeg",
+      "input_text": "what is written in the image?"
+    },
+    {
+      "image_path": "images/OCRBench/90.jpeg",
+      "input_text": "what is written in the image?"
+    },
+    {
+      "image_path": "images/OCRBench/91.jpeg",
+      "input_text": "what is written in the image?"
+    },
+    {
+      "image_path": "images/OCRBench/92.jpeg",
+      "input_text": "what is written in the image?"
+    },
+    {
+      "image_path": "images/OCRBench/93.jpeg",
+      "input_text": "what is written in the image?"
+    },
+    {
+      "image_path": "images/OCRBench/94.jpeg",
+      "input_text": "what is written in the image?"
+    },
+    {
+      "image_path": "images/OCRBench/95.jpeg",
+      "input_text": "what is written in the image?"
+    },
+    {
+      "image_path": "images/OCRBench/96.jpeg",
+      "input_text": "what is written in the image?"
+    },
+    {
+      "image_path": "images/OCRBench/97.jpeg",
+      "input_text": "what is written in the image?"
+    },
+    {
+      "image_path": "images/OCRBench/98.jpeg",
+      "input_text": "what is written in the image?"
+    },
+    {
+      "image_path": "images/OCRBench/99.jpeg",
+      "input_text": "what is written in the image?"
+    }
+  ]
+}
