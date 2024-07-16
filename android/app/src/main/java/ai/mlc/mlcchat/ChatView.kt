@@ -77,6 +77,7 @@ import java.io.IOException
 import java.time.Duration
 import java.time.Instant
 
+
 val textList = arrayOf("text", "to", "check", "latency", "and", "response")
 
 @ExperimentalMaterial3Api
@@ -188,7 +189,7 @@ fun compressImage(image: Bitmap): Bitmap? {
 fun scaleSize(image: Bitmap, newW : Int, newH: Int): Bitmap {
     if (image.height == image.width)
         return image
-    val maxDimension = Math.max(image.height, image.width)
+    val maxDimension = image.height.coerceAtLeast(image.width)
     val squareBitmap = Bitmap.createBitmap(maxDimension, maxDimension, image.config)
     val canvas = Canvas(squareBitmap)
     val paint = Paint()
@@ -208,7 +209,7 @@ fun getImage(srcPath: String?): Bitmap? {
     val newOpts = BitmapFactory.Options()
     //开始读入图片，此时把options.inJustDecodeBounds 设回true了
     newOpts.inJustDecodeBounds = true
-    var bitmap = BitmapFactory.decodeFile(srcPath, newOpts) //此时返回bm为空
+//    var bitmap = BitmapFactory.decodeFile(srcPath, newOpts) //此时返回bm为空
     newOpts.inJustDecodeBounds = false
     val w = newOpts.outWidth
     val h = newOpts.outHeight
@@ -225,7 +226,7 @@ fun getImage(srcPath: String?): Bitmap? {
     if (be <= 0) be = 1
     newOpts.inSampleSize = be //设置缩放比例
     //重新读入图片，注意此时已经把options.inJustDecodeBounds 设回false了
-    bitmap = BitmapFactory.decodeFile(srcPath, newOpts)
+    val bitmap = BitmapFactory.decodeFile(srcPath, newOpts)
     //return compressImage(bitmap) //压缩好比例大小后再进行质量压缩
     return scaleSize(bitmap, 224, 224)
 }
@@ -233,7 +234,7 @@ fun getImage(srcPath: String?): Bitmap? {
 fun bitmapToBytes(bitmap: Bitmap): FloatArray{
     val width = bitmap.width
     val height = bitmap.height
-    var pixels = FloatArray(3 * height * width)
+    val pixels = FloatArray(3 * height * width)
 
     for (y in 0 until height){
         for (x in 0 until width) {
@@ -242,7 +243,7 @@ fun bitmapToBytes(bitmap: Bitmap): FloatArray{
             val redValue = Color.red(pixelColor) // 提取红色通道的值
             val greenValue = Color.green(pixelColor) // 提取绿色通道的值
             val blueValue = Color.blue(pixelColor) //
-            pixels[0 * height * width + y * width + x] = redValue / 255f - 0.5f
+            pixels[0 + y * width + x] = redValue / 255f - 0.5f
             pixels[1 * height * width + y * width + x] = greenValue / 255f - 0.5f
             pixels[2 * height * width + y * width + x] = blueValue / 255f - 0.5f
         }
@@ -252,7 +253,7 @@ fun bitmapToBytes(bitmap: Bitmap): FloatArray{
 
 @Composable
 fun MessageView(messageData: MessageData, activity: Activity) {
-    var local_activity : MainActivity = activity as MainActivity
+    val localActivity : MainActivity = activity as MainActivity
     SelectionContainer {
         if (messageData.role == MessageRole.Bot) {
             Row(
@@ -280,13 +281,16 @@ fun MessageView(messageData: MessageData, activity: Activity) {
                 modifier = Modifier.fillMaxWidth()
             ) {
                 if (messageData.image_path != "") {
-                    var bitmap = getImage(messageData.image_path)
+//                    var bitmap = getImage(messageData.image_path)
+                    val bitmap = getImage("/storage/emulated/0/DCIM/Camera/20240430_155419.jpg")
+
+                    Log.v("get_image", messageData.image_path)
                     if (bitmap != null) {
-                        val image_data = bitmapToBytes(bitmap)
+                        val imageData = bitmapToBytes(bitmap)
 //                        Log.v("get_image", image_data.size.toString())
-                        var display_bitmap = Bitmap.createScaledBitmap(bitmap, 384, 384, true)
+                        val displayBitmap = Bitmap.createScaledBitmap(bitmap, 384, 384, true)
                         Image(
-                            display_bitmap.asImageBitmap(),
+                            displayBitmap.asImageBitmap(),
                             "",
                             modifier = Modifier
                                 .wrapContentWidth()
@@ -297,10 +301,10 @@ fun MessageView(messageData: MessageData, activity: Activity) {
                                 .padding(5.dp)
                                 .widthIn(max = 300.dp)
                         )
-                        if (!local_activity.has_image) {
-                            local_activity.chatState.requestImage(image_data)
+                        if (!localActivity.has_image) {
+                            localActivity.chatState.requestImage(imageData)
                         }
-                        local_activity.has_image = true
+                        localActivity.has_image = true
                     }
                 } else {
                     Text(
@@ -323,8 +327,8 @@ fun MessageView(messageData: MessageData, activity: Activity) {
 }
 
 var cnt = 0
-var start = Instant.now()
-var end = Instant.now()
+var start: Instant = Instant.now()
+var end: Instant = Instant.now()
 var dataIdx = 0
 var dataLength = textList.size
 
@@ -352,7 +356,7 @@ var benchmark = false
 @Composable
 fun SendMessageView(chatState: AppViewModel.ChatState, activity: Activity) {
     val localFocusManager = LocalFocusManager.current
-    var local_activity : MainActivity = activity as MainActivity
+    val localActivity : MainActivity = activity as MainActivity
 
 
     if (benchmark){
@@ -407,7 +411,7 @@ fun SendMessageView(chatState: AppViewModel.ChatState, activity: Activity) {
             modifier = Modifier
                 .aspectRatio(1f)
                 .weight(1f),
-            enabled = (chatState.chatable() && !local_activity.has_image)
+            enabled = (chatState.chatable() && !localActivity.has_image)
         ) {
             Icon(
                 imageVector = Icons.Filled.AddAPhoto,
@@ -425,7 +429,7 @@ fun SendMessageView(chatState: AppViewModel.ChatState, activity: Activity) {
             modifier = Modifier
                 .aspectRatio(1f)
                 .weight(1f),
-            enabled = (chatState.chatable() && !local_activity.has_image)
+            enabled = (chatState.chatable() && !localActivity.has_image)
         ) {
             Icon(
                 imageVector = Icons.Filled.Photo,
