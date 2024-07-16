@@ -76,17 +76,48 @@ import java.io.File
 import java.io.IOException
 import java.time.Duration
 import java.time.Instant
+import org.json.JSONArray
+import org.json.JSONObject
 
 
 val textList = arrayOf("text", "to", "check", "latency", "and", "response")
+var benchmark = true
+var cnt = 0
+var start: Instant = Instant.now()
+var end: Instant = Instant.now()
+var dataIdx = 0
+var dataLength = 0
+
 
 @ExperimentalMaterial3Api
 @Composable
 fun ChatView(
-    navController: NavController, chatState: AppViewModel.ChatState, activity: Activity
+    navController: NavController, chatState: AppViewModel.ChatState, activity: Activity, json:JSONArray
 ) {
     val localFocusManager = LocalFocusManager.current
     (activity as MainActivity).chatState = chatState
+
+    if (dataLength == 0){
+        dataLength = json.length()
+    }
+
+    if (benchmark && chatState.chatable() && !(activity as MainActivity).has_image) {
+        val entity: JSONObject = json[dataIdx] as JSONObject
+        val imagePath = "/storage/emulated/0/DCIM/images/" + entity.getString("image_path")
+        val inputText = entity.getString("input_text")
+        Log.v("ChatView", imagePath)
+        Log.v("ChatView", inputText)
+
+        val bitmap = getImage(imagePath)
+        if (bitmap != null) {
+            val imageData = bitmapToBytes(bitmap)
+            (activity as MainActivity).chatState.requestImage(imageData)
+            (activity as MainActivity).has_image = true
+        } else {
+            Log.v("ChatVew", "Image is Null")
+        }
+    }
+
     Scaffold(topBar = {
         TopAppBar(
             title = {
@@ -163,7 +194,7 @@ fun ChatView(
                 }
             }
             Divider(thickness = 1.dp, modifier = Modifier.padding(top = 5.dp))
-            SendMessageView(chatState = chatState, activity)
+            SendMessageView(chatState = chatState, activity, (json[dataIdx] as JSONObject).getString("input_text"))
         }
     }
 }
@@ -326,12 +357,6 @@ fun MessageView(messageData: MessageData, activity: Activity) {
     }
 }
 
-var cnt = 0
-var start: Instant = Instant.now()
-var end: Instant = Instant.now()
-var dataIdx = 0
-var dataLength = textList.size
-
 
 fun saveTextToFile(context: Context, text: String) {
     val state = Environment.getExternalStorageState()
@@ -350,23 +375,21 @@ fun saveTextToFile(context: Context, text: String) {
     }
 }
 
-var benchmark = false
-
 @ExperimentalMaterial3Api
 @Composable
-fun SendMessageView(chatState: AppViewModel.ChatState, activity: Activity) {
+fun SendMessageView(chatState: AppViewModel.ChatState, activity: Activity, inputText: String) {
     val localFocusManager = LocalFocusManager.current
     val localActivity : MainActivity = activity as MainActivity
 
 
     if (benchmark){
         val context = LocalContext.current
-        if (chatState.chatable() && cnt % 2 == 0 && dataIdx < dataLength){
+        if (chatState.chatable() && cnt % 2 == 0 && dataIdx < dataLength && localActivity.has_image){
             if (dataIdx % 5 == 0){
                 Toast.makeText(context, "Data Idx: $dataIdx", Toast.LENGTH_SHORT).show()
             }
             start = Instant.now()
-            val inputText = textList[dataIdx]
+//            val inputText = textList[dataIdx]
 
             chatState.requestGenerate(inputText)
             cnt += 1
@@ -381,6 +404,7 @@ fun SendMessageView(chatState: AppViewModel.ChatState, activity: Activity) {
             saveTextToFile(context, resultString)
             cnt += 1
             chatState.requestResetChat()
+            localActivity.has_image = false;
         }
     }
 
