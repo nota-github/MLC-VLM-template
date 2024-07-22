@@ -80,8 +80,7 @@ import org.json.JSONArray
 import org.json.JSONObject
 
 
-val textList = arrayOf("text", "to", "check", "latency", "and", "response")
-var benchmark = true
+var benchmark = false
 var cnt = 0
 var start: Instant = Instant.now()
 var end: Instant = Instant.now()
@@ -122,7 +121,7 @@ fun ChatView(
         TopAppBar(
             title = {
                 Text(
-                    text = "Nota Chat",
+                    text = "PhiVA-3.9B",
                     color = MaterialTheme.colorScheme.onPrimary
                 )
             },
@@ -199,27 +198,26 @@ fun ChatView(
     }
 }
 
-//对bitmap进行质量压缩
 fun compressImage(image: Bitmap): Bitmap? {
     val baos = ByteArrayOutputStream()
-    image.compress(Bitmap.CompressFormat.JPEG, 100, baos) //质量压缩方法，这里100表示不压缩，把压缩后的数据存放到baos中
+    image.compress(Bitmap.CompressFormat.JPEG, 100, baos)
     var options = 100
-    while (baos.toByteArray().toString().length / 1024 > 100) {  //循环判断如果压缩后图片是否大于100kb,大于继续压缩
-        baos.reset() //重置baos即清空baos
+    while (baos.toByteArray().toString().length / 1024 > 100) {
+        baos.reset()
         image.compress(
             Bitmap.CompressFormat.JPEG,
             options,
             baos
-        ) //这里压缩options%，把压缩后的数据存放到baos中
-        options -= 10 //每次都减少10
+        )
+        options -= 10
     }
     val isBm =
-        ByteArrayInputStream(baos.toByteArray()) //把压缩后的数据baos存放到ByteArrayInputStream中
-    return BitmapFactory.decodeStream(isBm, null, null) //把ByteArrayInputStream数据生成图片
+        ByteArrayInputStream(baos.toByteArray())
+    return BitmapFactory.decodeStream(isBm, null, null)
 }
 fun scaleSize(image: Bitmap, newW : Int, newH: Int): Bitmap {
-    if (image.height == image.width)
-        return image
+    //if (image.height == image.width)
+    //    return image
     val maxDimension = image.height.coerceAtLeast(image.width)
     val squareBitmap = Bitmap.createBitmap(maxDimension, maxDimension, image.config)
     val canvas = Canvas(squareBitmap)
@@ -235,30 +233,30 @@ fun scaleSize(image: Bitmap, newW : Int, newH: Int): Bitmap {
 }
 
 fun getImage(srcPath: String?): Bitmap? {
-    if (TextUtils.isEmpty(srcPath)) //如果图片路径为空 直接返回
+    if (TextUtils.isEmpty(srcPath))
         return null
     val newOpts = BitmapFactory.Options()
-    //开始读入图片，此时把options.inJustDecodeBounds 设回true了
+
     newOpts.inJustDecodeBounds = true
-//    var bitmap = BitmapFactory.decodeFile(srcPath, newOpts) //此时返回bm为空
+
     newOpts.inJustDecodeBounds = false
     val w = newOpts.outWidth
     val h = newOpts.outHeight
-    //现在主流手机比较多是800*480分辨率，所以高和宽我们设置为
-    val hh = 224f //这里设置高度为196f
-    val ww = 224f //这里设置宽度为196f
-    //缩放比。由于是固定比例缩放，只用高或者宽其中一个数据进行计算即可
-    var be = 1 //be=1表示不缩放
-    if (w > h && w > ww) { //如果宽度大的话根据宽度固定大小缩放
+
+    val hh = 224f
+    val ww = 224f
+
+    var be = 1
+    if (w > h && w > ww) {
         be = (newOpts.outWidth / ww).toInt()
-    } else if (w < h && h > hh) { //如果高度高的话根据高度固定大小缩放
+    } else if (w < h && h > hh) {
         be = (newOpts.outHeight / hh).toInt()
     }
     if (be <= 0) be = 1
-    newOpts.inSampleSize = be //设置缩放比例
-    //重新读入图片，注意此时已经把options.inJustDecodeBounds 设回false了
+    newOpts.inSampleSize = be
+
     val bitmap = BitmapFactory.decodeFile(srcPath, newOpts)
-    //return compressImage(bitmap) //压缩好比例大小后再进行质量压缩
+
     return scaleSize(bitmap, 224, 224)
 }
 
@@ -269,10 +267,10 @@ fun bitmapToBytes(bitmap: Bitmap): FloatArray{
 
     for (y in 0 until height){
         for (x in 0 until width) {
-            val pixelColor = bitmap.getPixel(x, y) // 获取指定位置的像素值（ARGB格式）
+            val pixelColor = bitmap.getPixel(x, y)
 
-            val redValue = Color.red(pixelColor) // 提取红色通道的值
-            val greenValue = Color.green(pixelColor) // 提取绿色通道的值
+            val redValue = Color.red(pixelColor)
+            val greenValue = Color.green(pixelColor)
             val blueValue = Color.blue(pixelColor) //
             pixels[0 + y * width + x] = redValue / 255f - 0.5f
             pixels[1 * height * width + y * width + x] = greenValue / 255f - 0.5f
@@ -312,8 +310,8 @@ fun MessageView(messageData: MessageData, activity: Activity) {
                 modifier = Modifier.fillMaxWidth()
             ) {
                 if (messageData.image_path != "") {
-//                    var bitmap = getImage(messageData.image_path)
-                    val bitmap = getImage("/storage/emulated/0/DCIM/Camera/20240430_155419.jpg")
+                    var bitmap = getImage(messageData.image_path)
+//                    val bitmap = getImage("/storage/emulated/0/DCIM/Camera/20240430_155419.jpg")
 
                     Log.v("get_image", messageData.image_path)
                     if (bitmap != null) {
