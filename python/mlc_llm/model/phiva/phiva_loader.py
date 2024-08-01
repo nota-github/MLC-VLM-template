@@ -85,53 +85,6 @@ def huggingface(model_config: PhivaConfig, quantization: Quantization) -> Extern
             )
     return mapping
 
-    # for i in range(model_config.text_config.num_hidden_layers):
-    #     # Add QKV in self attention
-    #     attn = f"language_model.model.layers.{i}.self_attn"
-    #     mlc_name = f"{attn}.qkv_proj.weight"
-    #     mlc_param = named_parameters[mlc_name]
-    #     mapping.add_mapping(
-    #         mlc_name,
-    #         [
-    #             f"{attn}.q_proj.weight",
-    #             f"{attn}.k_proj.weight",
-    #             f"{attn}.v_proj.weight",
-    #         ],
-    #         functools.partial(
-    #             lambda q, k, v, dtype: np.concatenate([q, k, v], axis=0).astype(dtype),
-    #             dtype=mlc_param.dtype,
-    #         ),
-    #     )
-    #     # Add gates in MLP
-    #     mlp = f"language_model.model.layers.{i}.mlp"
-    #     mlc_name = f"{mlp}.gate_up_proj.weight"
-    #     mlc_param = named_parameters[mlc_name]
-    #     mapping.add_mapping(
-    #         mlc_name,
-    #         [
-    #             f"{mlp}.gate_proj.weight",
-    #             f"{mlp}.up_proj.weight",
-    #         ],
-    #         functools.partial(
-    #             lambda gate, up, dtype: np.concatenate([gate, up], axis=0).astype(dtype),
-    #             dtype=mlc_param.dtype,
-    #         ),
-    #     )
-    #     # inv_freq is not used in the model
-    #     mapping.add_unused(f"{attn}.rotary_emb.inv_freq")
-
-    # for mlc_name, mlc_param in named_parameters.items():
-    #     if mlc_name not in mapping.param_map:
-    #         mapping.add_mapping(
-    #             mlc_name,
-    #             [mlc_name],
-    #             functools.partial(
-    #                 lambda x, dtype: x.astype(dtype),
-    #                 dtype=mlc_param.dtype,
-    #             ),
-    #         )
-    # return mapping
-
 
 def awq(model_config: PhivaConfig, quantization: Quantization) -> ExternMapping:
     """Returns a parameter mapping that maps from the names of MLC LLM parameters to
