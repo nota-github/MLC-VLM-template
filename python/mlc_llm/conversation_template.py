@@ -246,6 +246,38 @@ ConvTemplateRegistry.register_conv_template(
     )
 )
 
+# Phi-3
+ConvTemplateRegistry.register_conv_template(
+    Conversation(
+        name="phi-3",
+        system_template=f"{MessagePlaceholders.SYSTEM.value}",
+        system_message="",
+        roles={"user": "Instruct", "assistant": "Output"},
+        seps=["\n"],
+        role_content_sep=": ",
+        role_empty_sep=":",
+        stop_str=["<|endoftext|>", "<|end|>"],
+        stop_token_ids=[32000, 32007],
+    )
+)
+
+# Phiva
+ConvTemplateRegistry.register_conv_template(
+    Conversation(
+        name="phiva",
+        system_template=f"{MessagePlaceholders.SYSTEM.value}",
+        system_message="",
+        roles={"user": "USER", "assistant": "ASSISTANT"},
+        seps=[" "],
+        role_content_sep=": ",
+        role_empty_sep=":",
+        stop_str=["</s>"],
+        stop_token_ids=[32000],
+        add_role_after_system_message=False,
+        image_token_index=32011,
+    )
+)
+
 # StableLM Tuned Alpha
 ConvTemplateRegistry.register_conv_template(
     Conversation(
