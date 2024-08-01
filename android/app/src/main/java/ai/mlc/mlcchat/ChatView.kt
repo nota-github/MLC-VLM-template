@@ -1,18 +1,18 @@
 package ai.mlc.mlcchat
 
-import android.annotation.SuppressLint
 import android.app.Activity
+import android.content.Context
 import android.content.Intent
 import android.graphics.Bitmap
 import android.graphics.BitmapFactory
 import android.graphics.Canvas
 import android.graphics.Color
 import android.graphics.Paint
+import android.os.Environment
 import android.provider.MediaStore
 import android.text.TextUtils
-import android.util.Half
 import android.util.Log
-import androidx.annotation.HalfFloat
+import android.widget.Toast
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
 import androidx.compose.foundation.gestures.detectTapGestures
@@ -59,24 +59,57 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.asImageBitmap
 import androidx.compose.ui.input.pointer.pointerInput
+import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.platform.LocalFocusManager
-import androidx.compose.ui.text.capitalize
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.core.app.ActivityCompat.startActivityForResult
 import androidx.navigation.NavController
 import kotlinx.coroutines.launch
+import org.json.JSONArray
+import org.json.JSONObject
 import java.io.ByteArrayInputStream
 import java.io.ByteArrayOutputStream
-import java.util.Locale
+import java.io.File
+import java.io.IOException
+import java.time.Duration
+import java.time.Instant
+
+var benchmark = false
+var cnt = 0
+var start: Instant = Instant.now()
+var end: Instant = Instant.now()
+var dataIdx = 0
+var dataLength = 0
 
 @ExperimentalMaterial3Api
 @Composable
 fun ChatView(
-    navController: NavController, chatState: AppViewModel.ChatState, activity: Activity
+    navController: NavController, chatState: AppViewModel.ChatState, activity: Activity, json: JSONArray
 ) {
     val localFocusManager = LocalFocusManager.current
     (activity as MainActivity).chatState = chatState
+
+    if (dataLength == 0){
+        dataLength = json.length()
+    }
+
+    if (benchmark && chatState.chatable() && !(activity as MainActivity).has_image) {
+        val entity: JSONObject = json[dataIdx] as JSONObject
+        val imagePath = "/storage/emulated/0/DCIM/images/" + entity.getString("image_path")
+        val inputText = entity.getString("input_text")
+        Log.v("ChatView", imagePath)
+        Log.v("ChatView", inputText)
+
+        val bitmap = getImage(imagePath)
+        if (bitmap != null) {
+            val imageData = bitmapToBytes(bitmap)
+            (activity as MainActivity).chatState.requestImage(imageData)
+            (activity as MainActivity).has_image = true
+        } else {
+            Log.v("ChatVew", "Image is Null")
+        }
+    }
     Scaffold(topBar = {
         TopAppBar(
             title = {
@@ -153,12 +186,12 @@ fun ChatView(
                 }
             }
             Divider(thickness = 1.dp, modifier = Modifier.padding(top = 5.dp))
-            SendMessageView(chatState = chatState, activity)
+            SendMessageView(chatState = chatState, activity, (json[dataIdx] as JSONObject).getString("input_text"))
         }
     }
 }
 
-//对bitmap进行质量压缩
+
 fun compressImage(image: Bitmap): Bitmap? {
     val baos = ByteArrayOutputStream()
     image.compress(Bitmap.CompressFormat.JPEG, 100, baos) //质量压缩方法，这里100表示不压缩，把压缩后的数据存放到baos中
@@ -243,7 +276,7 @@ fun bitmapToBytes(bitmap: Bitmap): FloatArray{
 
 @Composable
 fun MessageView(messageData: MessageData, activity: Activity) {
-    var local_activity : MainActivity = activity as MainActivity
+    val localActivity : MainActivity = activity as MainActivity
     SelectionContainer {
         if (messageData.role == MessageRole.Bot) {
             Row(
@@ -288,10 +321,10 @@ fun MessageView(messageData: MessageData, activity: Activity) {
                                 .padding(5.dp)
                                 .widthIn(max = 300.dp)
                         )
-                        if (!local_activity.has_image) {
-                            local_activity.chatState.requestImage(image_data)
+                        if (!localActivity.has_image) {
+                            localActivity.chatState.requestImage(image_data)
                         }
-                        local_activity.has_image = true
+                        localActivity.has_image = true
                     }
                 } else {
                     Text(
@@ -313,11 +346,53 @@ fun MessageView(messageData: MessageData, activity: Activity) {
     }
 }
 
+fun saveTextToFile(context: Context, text: String) {
+    val state = Environment.getExternalStorageState()
+    if (Environment.MEDIA_MOUNTED == state) {
+        val file = File(context.getExternalFilesDir(null), "result.txt")
+        try {
+            val writer = java.io.FileWriter(file, true)
+            writer.append(text)
+            writer.close()
+            Log.d("MainActivity", "Text saved: $text")
+        } catch (e: IOException) {
+            e.printStackTrace()
+        }
+    } else {
+        Log.e("MainActivity", "External storage is not writable")
+    }
+}
+
 @ExperimentalMaterial3Api
 @Composable
-fun SendMessageView(chatState: AppViewModel.ChatState, activity: Activity) {
+fun SendMessageView(chatState: AppViewModel.ChatState, activity: Activity, inputText: String) {
     val localFocusManager = LocalFocusManager.current
-    var local_activity : MainActivity = activity as MainActivity
+    val localActivity : MainActivity = activity as MainActivity
+
+    if (benchmark){
+        val context = LocalContext.current
+        if (chatState.chatable() && cnt % 2 == 0 && dataIdx < dataLength && localActivity.has_image){
+            if (dataIdx % 5 == 0){
+                Toast.makeText(context, "Data Idx: $dataIdx", Toast.LENGTH_SHORT).show()
+            }
+            start = Instant.now()
+            chatState.requestGenerate(inputText)
+            cnt += 1
+            dataIdx += 1
+        }
+        if (chatState.chatable() && cnt % 2 == 1 && dataIdx <= dataLength) {
+            end = Instant.now()
+            val elapsedTime = Duration.between(start, end).toMillis()
+            val responseText = chatState.messages[1].text
+
+            val resultString = "$dataIdx!@!@!@$elapsedTime!@!@!@$responseText!@#\n\n"
+            saveTextToFile(context, resultString)
+            cnt += 1
+            chatState.requestResetChat()
+            localActivity.has_image = false;
+        }
+    }
+
     Row(
         horizontalArrangement = Arrangement.spacedBy(5.dp),
         verticalAlignment = Alignment.CenterVertically,
@@ -343,7 +418,7 @@ fun SendMessageView(chatState: AppViewModel.ChatState, activity: Activity) {
             modifier = Modifier
                 .aspectRatio(1f)
                 .weight(1f),
-            enabled = (chatState.chatable() && !local_activity.has_image)
+            enabled = (chatState.chatable() && !localActivity.has_image)
         ) {
             Icon(
                 imageVector = Icons.Filled.AddAPhoto,
@@ -361,7 +436,7 @@ fun SendMessageView(chatState: AppViewModel.ChatState, activity: Activity) {
             modifier = Modifier
                 .aspectRatio(1f)
                 .weight(1f),
-            enabled = (chatState.chatable() && !local_activity.has_image)
+            enabled = (chatState.chatable() && !localActivity.has_image)
         ) {
             Icon(
                 imageVector = Icons.Filled.Photo,
