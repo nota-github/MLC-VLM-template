@@ -1360,7 +1360,7 @@ class LLMChat {
   // run forward compute
   NDArray ForwardTokens(std::vector<int32_t> input_tokens, int64_t cur_pos, NDArray pixel_values = NDArray()) {
     ObjectRef ret{nullptr};
-    this->conversation_.image_token_index=32000;
+    
     if (input_tokens.size() > 1 && ft_.prefill_func_.defined()) {
       ObjectRef input_data = ft_.CopyToWorker0(this->GetInputTokenNDArray(input_tokens));
       if (ft_.use_kv_state) {

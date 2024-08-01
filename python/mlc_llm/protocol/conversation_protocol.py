@@ -82,6 +82,8 @@ class Conversation(BaseModel):
     # whether using function calling or not, helps check for output message format in API call
     use_function_calling: bool = False
 
+    image_token_index: int = -1
+
     def __init__(self, role_templates: Optional[Dict[str, str]] = None, **kwargs):
         # Defaults templates which would be overridden by model specific templates
         _role_templates: Dict[str, str] = {

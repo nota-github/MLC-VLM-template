@@ -81,7 +81,7 @@ fun ChatView(
         TopAppBar(
             title = {
                 Text(
-                    text = "Nota VLM Chat-LLaVA 7B",
+                    text = "PhiVA 4B",
                     color = MaterialTheme.colorScheme.onPrimary
                 )
             },
@@ -177,8 +177,8 @@ fun compressImage(image: Bitmap): Bitmap? {
     return BitmapFactory.decodeStream(isBm, null, null) //把ByteArrayInputStream数据生成图片
 }
 fun scaleSize(image: Bitmap, newW : Int, newH: Int): Bitmap {
-    if (image.height == image.width)
-        return image
+//    if (image.height == image.width)
+//        return image
     val maxDimension = Math.max(image.height, image.width)
     val squareBitmap = Bitmap.createBitmap(maxDimension, maxDimension, image.config)
     val canvas = Canvas(squareBitmap)
@@ -204,8 +204,8 @@ fun getImage(srcPath: String?): Bitmap? {
     val w = newOpts.outWidth
     val h = newOpts.outHeight
     //现在主流手机比较多是800*480分辨率，所以高和宽我们设置为
-    val hh = 336f //这里设置高度为196f
-    val ww = 336f //这里设置宽度为196f
+    val hh = 224f //这里设置高度为196f
+    val ww = 224f //这里设置宽度为196f
     //缩放比。由于是固定比例缩放，只用高或者宽其中一个数据进行计算即可
     var be = 1 //be=1表示不缩放
     if (w > h && w > ww) { //如果宽度大的话根据宽度固定大小缩放
@@ -218,7 +218,7 @@ fun getImage(srcPath: String?): Bitmap? {
     //重新读入图片，注意此时已经把options.inJustDecodeBounds 设回false了
     bitmap = BitmapFactory.decodeFile(srcPath, newOpts)
     //return compressImage(bitmap) //压缩好比例大小后再进行质量压缩
-    return scaleSize(bitmap, 336, 336)
+    return scaleSize(bitmap, 224, 224)
 }
 
 fun bitmapToBytes(bitmap: Bitmap): FloatArray{
