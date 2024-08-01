@@ -81,7 +81,7 @@ fun ChatView(
         TopAppBar(
             title = {
                 Text(
-                    text = "Nota VLM Chat-LLaVA 7B",
+                    text = "PhiVA 4B",
                     color = MaterialTheme.colorScheme.onPrimary
                 )
             },
