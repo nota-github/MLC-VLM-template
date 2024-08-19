@@ -1,5 +1,6 @@
 package ai.mlc.mlcchat
 
+import ai.mlc.mlcchat.ui.theme.NotaSky3
 import android.annotation.SuppressLint
 import android.app.Activity
 import android.content.Intent
@@ -25,6 +26,7 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.layout.widthIn
 import androidx.compose.foundation.layout.wrapContentHeight
 import androidx.compose.foundation.layout.wrapContentWidth
@@ -58,8 +60,10 @@ import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.asImageBitmap
+import androidx.compose.ui.graphics.painter.Painter
 import androidx.compose.ui.input.pointer.pointerInput
 import androidx.compose.ui.platform.LocalFocusManager
+import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.capitalize
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
@@ -80,24 +84,14 @@ fun ChatView(
     Scaffold(topBar = {
         TopAppBar(
             title = {
-                Text(
-                    text = "PhiVA 4B",
-                    color = MaterialTheme.colorScheme.onPrimary
+                val image: Painter = painterResource(id = R.drawable.header_logo)
+                Image(
+                    painter=image,
+                    contentDescription = null,
+                    modifier = Modifier.size(100.dp)
                 )
             },
-            colors = TopAppBarDefaults.topAppBarColors(containerColor = MaterialTheme.colorScheme.primary),
-            navigationIcon = {
-                IconButton(
-                    onClick = { navController.popBackStack() },
-                    enabled = chatState.interruptable()
-                ) {
-                    Icon(
-                        imageVector = Icons.Filled.ArrowBack,
-                        contentDescription = "back home page",
-                        tint = MaterialTheme.colorScheme.onPrimary
-                    )
-                }
-            },
+            colors = TopAppBarDefaults.topAppBarColors(containerColor = NotaSky3),
             actions = {
                 IconButton(
                     onClick = {

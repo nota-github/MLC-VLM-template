@@ -1,5 +1,6 @@
 package ai.mlc.mlcchat
 
+import androidx.compose.foundation.Image
 import androidx.compose.foundation.gestures.detectTapGestures
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
@@ -47,6 +48,9 @@ import androidx.compose.ui.res.colorResource
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.navigation.NavController
+import androidx.compose.foundation.layout.size
+import androidx.compose.ui.graphics.painter.Painter
+import androidx.compose.ui.res.painterResource
 
 
 @ExperimentalMaterial3Api
@@ -59,7 +63,29 @@ fun StartView(
     Scaffold(
         topBar = {
             TopAppBar(
-                title = { Text(text = "Nota Chat", color = MaterialTheme.colorScheme.onPrimary) },
+                title = {
+                    val image: Painter=painterResource(id = R.drawable.header_logo)
+                    Image(
+                        painter=image,
+                        contentDescription = null,
+                        modifier = Modifier.size(100.dp)
+                    )
+                },
+                actions = {
+                    // 추가된 이미지 버튼: 오픈소스 라이선스 목록 화면으로 이동
+                    IconButton(
+                        onClick = {
+                            navController.navigate("open_source_list")
+                        }
+                    ) {
+                        val iconImage: Painter = painterResource(id = R.drawable.info)
+                        Image(
+                            painter = iconImage,
+                            contentDescription = "Open Source Licenses",
+                            modifier = Modifier.size(24.dp) // 원하는 크기로 조정
+                        )
+                    }
+                },
                 colors = TopAppBarDefaults.topAppBarColors(containerColor = MaterialTheme.colorScheme.primary)
             )
         },

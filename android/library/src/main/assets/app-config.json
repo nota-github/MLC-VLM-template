@@ -1,12 +1,12 @@
 {
   "model_list": [
     {
-      "model_url": "https://huggingface.co/jykim310/llava-1.5-7b-hf-q4f16_1-MLC",
-      "model_lib": "llava_q4f16_1",
-      "model_id": "llava-1.5-7b-hf_q4f16_1"
+      "model_url": "https://huggingface.co/nota-ai/phiva-4b-hf-q4f16_1-MLC",
+      "model_lib": "phiva_q4f16_1",
+      "model_id": "phiva-4b-hf_q4f16_1"
     }
   ],
   "model_lib_path_for_prepare_libs": {
-    "llava_q4f16_1": "llava-1.5-7b-hf-q4f16_1-MLC/llava-1.5-7b-hf-q4f16_1-android.tar"
+    "phiva_q4f16_1": "phiva-4b-hf-q4f16_1-MLC/phiva-4b-hf-q4f16_1-android.tar"
   }
 }

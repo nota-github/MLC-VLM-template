@@ -7,11 +7,15 @@ android {
     namespace 'ai.mlc.mlcchat'
     compileSdk 34
 
+    def getVersionCode = { ->
+        return project.hasProperty('versionCode') ? project.versionCode.toInteger() : 1
+    }
+
     defaultConfig {
         applicationId "ai.mlc.mlcchat"
         minSdk 26
         targetSdk 33
-        versionCode 1
+        versionCode getVersionCode() + 1
         versionName "1.0"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
