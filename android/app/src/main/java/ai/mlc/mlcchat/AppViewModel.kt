@@ -822,7 +822,7 @@ class AppViewModel(application: Application) : AndroidViewModel(application) {
 
             var responseText = ""
             viewModelScope.launch(Dispatchers.IO) {
-                getCloudGenerateFlow(requestData).collectLatest { apiResponse ->
+                getCloudGenerateFlow(requestData).collect { apiResponse ->
                     withContext(Dispatchers.Main){
                         responseText += apiResponse.response
                         updateMessage(MessageRole.Bot, responseText)
