@@ -1,14 +1,13 @@
 package ai.mlc.mlcchat
 
 import ai.mlc.mlcllm.ChatModule
-import android.annotation.SuppressLint
 import android.app.Application
 import android.content.ClipData
 import android.content.ClipboardManager
 import android.content.Context
 import android.os.Environment
+import android.util.Log
 import android.widget.Toast
-import androidx.annotation.HalfFloat
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.toMutableStateList
 import androidx.lifecycle.AndroidViewModel
@@ -16,13 +15,30 @@ import androidx.lifecycle.viewModelScope
 import com.google.gson.Gson
 import com.google.gson.annotations.SerializedName
 import kotlinx.coroutines.launch
+import okhttp3.OkHttpClient
+import retrofit2.Call
+import retrofit2.Retrofit
+import retrofit2.converter.gson.GsonConverterFactory
 import java.io.File
 import java.io.FileOutputStream
 import java.net.URL
 import java.nio.channels.Channels
 import java.util.UUID
 import java.util.concurrent.Executors
+import java.util.concurrent.TimeUnit
 import kotlin.concurrent.thread
+import androidx.compose.foundation.layout.*
+import androidx.compose.runtime.*
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.flow.Flow
+import kotlinx.coroutines.flow.collectLatest
+import kotlinx.coroutines.flow.flow
+import kotlinx.coroutines.withContext
+import okhttp3.ResponseBody
+import retrofit2.http.Body
+import retrofit2.http.POST
+import java.io.BufferedReader
+import java.io.InputStreamReader
 
 class AppViewModel(application: Application) : AndroidViewModel(application) {
     val modelList = emptyList<ModelState>().toMutableStateList()
@@ -216,6 +232,25 @@ class AppViewModel(application: Application) : AndroidViewModel(application) {
 
         }
     }
+
+    data class RequestData(
+        val model: String,
+        val prompt: String,
+        val options: Options,
+        val stream: Boolean
+    )
+
+    data class Options(
+        val temperature: Int
+    )
+
+    data class ApiResponse(
+        val model: String,
+        @SerializedName("created_at") val createdAt: String,
+        val response: String,
+        val done: Boolean
+    )
+
 
     inner class ModelState(
         val modelConfig: ModelConfig,
@@ -491,6 +526,12 @@ class AppViewModel(application: Application) : AndroidViewModel(application) {
 
     }
 
+    interface ApiService {
+        @POST("api/generate")
+//        fun postRequest(@Body body: RequestData): Call<ApiResponse>
+        fun postRequest(@Body body: RequestData): Call<ResponseBody>
+    }
+
     inner class ChatState {
         val messages = emptyList<MessageData>().toMutableStateList()
         val report = mutableStateOf("")
@@ -503,6 +544,20 @@ class AppViewModel(application: Application) : AndroidViewModel(application) {
         private var modelPath = ""
         private val executorService = Executors.newSingleThreadExecutor()
         private var has_image_prompt = false
+
+        val okHttpClient = OkHttpClient.Builder()
+            .connectTimeout(180, TimeUnit.SECONDS)
+            .readTimeout(180, TimeUnit.SECONDS)
+            .writeTimeout(180, TimeUnit.SECONDS)
+            .build()
+
+        val retrofit = Retrofit.Builder()
+            .baseUrl("http://10.169.20.129:11434/") // 서버 URL 변경 필요
+            .client(okHttpClient)
+            .addConverterFactory(GsonConverterFactory.create())
+            .build()
+
+        val apiService = retrofit.create(ApiService::class.java)
 
         private fun mainResetChat() {
             has_image_prompt = false
@@ -666,15 +721,20 @@ class AppViewModel(application: Application) : AndroidViewModel(application) {
                     if (modelChatState.value == ModelChatState.Generating) switchToReady()
                 }
             }
-
         }
 
+        fun requestClassification(prompt: String): String? {
+            return backend.classification(prompt);
+        }
 
-        fun requestGenerate(prompt: String) {
+        fun requestGenerate(prompt: String, SLMFirst: Boolean) {
             require(chatable())
             switchToGenerating()
             executorService.submit {
                 appendMessage(MessageRole.User, prompt)
+                if (SLMFirst){
+                    appendMessage(MessageRole.Bot, "According to the routing process, I'll be showing the response from the smaller model on your device.")
+                }
                 appendMessage(MessageRole.Bot, "")
                 if (!callBackend {
                     backend.prefill(prompt)
@@ -687,12 +747,127 @@ class AppViewModel(application: Application) : AndroidViewModel(application) {
                         }) return@submit
                     if (modelChatState.value != ModelChatState.Generating) return@submit
                 }
+                if (SLMFirst){
+//                    requestCloudGenerate(prompt, SLMFirst)
+                }
                 val runtimeStats = backend.runtimeStatsText()
                 viewModelScope.launch {
                     report.value = runtimeStats
                     if (modelChatState.value == ModelChatState.Generating) switchToReady()
                 }
             }
+        }
+
+        fun requestOnDeviceGenerate(prompt: String, SLMFirst: Boolean, context: Context) {
+            require(chatable())
+            switchToGenerating()
+            executorService.submit {
+                if (SLMFirst){
+                    appendMessage(MessageRole.User, prompt)
+                    appendMessage(MessageRole.Bot, "According to the routing process, I'll show you the response from the smaller model on your device.")
+                }
+                appendMessage(MessageRole.Bot, "")
+                if (!callBackend {
+                        backend.prefill(prompt)
+                    }) return@submit
+                while (!backend.stopped()) {
+                    if (!callBackend {
+                            backend.decode()
+                            val newText = backend.message
+                            viewModelScope.launch { updateMessage(MessageRole.Bot, newText) }
+                        }) return@submit
+                    if (modelChatState.value != ModelChatState.Generating) return@submit
+                }
+                if (SLMFirst){
+                    Thread.sleep(1000)
+                    appendMessage(MessageRole.Bot, "For comparison, we will also show the response generated by a large model in the cloud that our router did not prefer for the given query.")
+                    requestCloudGenerate(prompt, SLMFirst, context)
+                }
+                val runtimeStats = backend.runtimeStatsText()
+                viewModelScope.launch {
+                    report.value = runtimeStats
+                    if (modelChatState.value == ModelChatState.Generating) switchToReady()
+                }
+            }
+        }
+
+        private fun getCloudGenerateFlow(requestData: RequestData): Flow<ApiResponse> {
+            return flow {
+                val response = apiService.postRequest(requestData).execute()
+                if (response.isSuccessful) {
+                    val responseBody = response.body()
+                    responseBody?.let { it ->
+                        val bufferedReader = BufferedReader(InputStreamReader(it.byteStream()))
+                        var line: String?
+                        while (bufferedReader.readLine().also { line = it } != null) {
+                            val apiResponse = Gson().fromJson(line, ApiResponse::class.java)
+                            emit(apiResponse)
+                            if (apiResponse.done) {
+                                break
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        private fun requestCloudGenerate(prompt: String, SLMFirst: Boolean, context: Context) {
+            val requestData = RequestData(
+                model = "llama3:70b-instruct-q4_0",
+                prompt = prompt,
+                options = Options(temperature = 0),
+                stream = true
+            )
+            appendMessage(MessageRole.Bot, "")
+
+            var responseText = ""
+            viewModelScope.launch(Dispatchers.IO) {
+                getCloudGenerateFlow(requestData).collectLatest { apiResponse ->
+                    withContext(Dispatchers.Main){
+                        responseText += apiResponse.response
+                        updateMessage(MessageRole.Bot, responseText)
+                        Log.v("streaming", responseText)
+                        if (apiResponse.done) {
+                            Log.v("Streaming done", responseText)
+                            if (!SLMFirst){
+                                Thread.sleep(1000)
+                                appendMessage(MessageRole.Bot, "For comparison, we will also show the response generated by a small model on your device that our router did not prefer for the given query.")
+                                chatState.requestOnDeviceGenerate(prompt, false, context)
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        fun requestGenerationWithRouting(context: Context, prompt: String, forceLLM: Boolean = false){
+            val logits = chatState.requestClassification(prompt);
+            if (logits != null) {
+                Log.v("logits", logits)
+                val (llmQuality, slmQuality, llmLatency, slmLatency) = stringToFloatValues(logits)
+                if (llmQuality < slmQuality && llmLatency < slmLatency && !forceLLM) {
+                    // SLM Wins
+                    requestOnDeviceGenerate(prompt, true, context)
+                } else {
+                    // LLM Wins
+                    appendMessage(MessageRole.User, prompt)
+                    appendMessage(MessageRole.Bot, "According to the routing process, I'll be showing the response from the larger model on our cloud.")
+                    requestCloudGenerate(prompt, false, context)
+                }
+            }
+        }
+
+        private fun stringToFloatValues(input: String): List<Float> {
+            val numbers = input.trim()
+                .removeSurrounding("[", "]")  // 양쪽의 대괄호 제거
+                .split(",")                   // 쉼표로 분리하여 리스트로 변환
+                .map { it.trim().toFloat() }   // 각 요소를 Float로 변환
+
+            if (numbers.size < 4) {
+                throw IllegalArgumentException("Input must contain at least 4 values")
+            }
+
+            return numbers.take(4)
         }
 
         private fun appendMessage(role: MessageRole, text: String) {

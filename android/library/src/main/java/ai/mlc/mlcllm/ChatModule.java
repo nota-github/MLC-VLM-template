@@ -1,19 +1,10 @@
 package ai.mlc.mlcllm;
 
-import android.annotation.SuppressLint;
-import android.renderscript.Float2;
-import android.util.Half;
-import android.util.Log;
-
-import androidx.annotation.HalfFloat;
-
 import org.apache.tvm.Device;
 import org.apache.tvm.Function;
 import org.apache.tvm.Module;
 import org.apache.tvm.NDArray;
 import org.apache.tvm.TVMType;
-
-import java.nio.FloatBuffer;
 
 public class ChatModule {
     private Function reloadFunc;
