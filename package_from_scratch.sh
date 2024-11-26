@@ -1,19 +1,20 @@
 set -e
 
-MODEL_NAME=llava-1.5-7b-hf
-QUANTIZATION=q4f16_1
+MODEL_NAME=phiva-4b-hf
+QUANTIZATION=q4f16_0
 
 # 1. Download weights from HF
 git lfs install
-git clone https://huggingface.co/llava-hf/$MODEL_NAME \
+git clone https://huggingface.co/nota-ai/$MODEL_NAME \
           ./dist/models/$MODEL_NAME
           
 # 2. convert weights
-mlc_llm convert_weight ./dist/models/$MODEL_NAME/ --quantization $QUANTIZATION -o dist/$MODEL_NAME-$QUANTIZATION-MLC/
+mlc_llm convert_weight ./dist/models/$MODEL_NAME/ --quantization $QUANTIZATION \
+    -o dist/$MODEL_NAME-$QUANTIZATION-MLC/ --model phiva
 
 # 3. create mlc-chat-config.json
 mlc_llm gen_config ./dist/models/$MODEL_NAME/ --quantization $QUANTIZATION \
-  --conv-template llava --context-window-size 768 -o dist/${MODEL_NAME}-${QUANTIZATION}-MLC/
+  --model phiva --conv-template phiva --context-window-size 768 -o dist/${MODEL_NAME}-${QUANTIZATION}-MLC/
 
 # 4. compile model library with specification in mlc-chat-config.json
 mlc_llm compile ./dist/${MODEL_NAME}-${QUANTIZATION}-MLC/mlc-chat-config.json \

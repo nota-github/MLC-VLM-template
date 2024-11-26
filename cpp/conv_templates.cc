@@ -759,6 +759,27 @@ Conversation LLaVA() {
   return conv;
 }
 
+Conversation PhiVA() {
+  Conversation conv;
+  conv.name = "phiva";
+  conv.system = "";
+  conv.roles = {"USER", "ASSISTANT"};
+  conv.messages = {};
+  conv.offset = 0;
+  conv.separator_style = SeparatorStyle::kSepRoleMsg;
+  conv.seps = {" ", "</s>"};
+  conv.role_msg_sep = ": ";
+  conv.role_empty_sep = ":";
+  // TODO(mlc-team): add eos to mlc-chat-config
+  // and remove eos from stop token setting.
+  conv.stop_tokens = {2};
+  conv.stop_str = "</s>";
+  conv.add_bos = false;
+  conv.use_pixel_values = true;
+  conv.image_token_index = 32011;
+  return conv;
+}
+
 Conversation Imp() {
   Conversation conv;
   conv.name = "imp";

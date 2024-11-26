@@ -1,7 +1,7 @@
 set -e
 
-MODEL_NAME=llava-1.5-7b-hf
-QUANTIZATION=q4f16_1
+MODEL_NAME=phiva-4b-hf
+QUANTIZATION=q4f16_0
 
 # 1. Download converted weights from HF
 git lfs install
