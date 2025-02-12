@@ -1,12 +1,12 @@
 {
     "model_list": [
         {
-            "model_url": "https://huggingface.co/jykim310/phiva-4b-hf-q4f16_0-MLC",
-            "model_lib": "phiva_q4f16_0",
-            "model_id": "phiva-4b-hf-q4f16_0-MLC"
+            "model_url": "https://huggingface.co/jykim310/Llama-3.2-1B-Instruct-q4f16_0-MLC",
+            "model_lib": "llama-q4f16_0",
+            "model_id": "Llama-3.2-1B-Instruct-q4f16_0-MLC"
         }
     ],
     "model_lib_path_for_prepare_libs": {
-        "phiva_q4f16_0": "phiva-4b-hf-q4f16_0-MLC/phiva-4b-hf-q4f16_0-android.tar"
+        "Llama-3.2-1B-Instruct-q4f16_0-MLC": "Llama-3.2-1B-Instruct-q4f16_0-MLC/Llama-3.2-1B-Instruct-q4f16_0-android.tar"
     }
 }

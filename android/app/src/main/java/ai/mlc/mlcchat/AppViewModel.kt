@@ -7,19 +7,27 @@ import android.content.ClipData
 import android.content.ClipboardManager
 import android.content.Context
 import android.os.Environment
+import android.util.Log
 import android.widget.Toast
 import androidx.annotation.HalfFloat
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.toMutableStateList
+import androidx.compose.ui.platform.LocalContext
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.viewModelScope
 import com.google.gson.Gson
+import com.google.gson.GsonBuilder
 import com.google.gson.annotations.SerializedName
 import kotlinx.coroutines.launch
+import org.json.JSONObject
 import java.io.File
 import java.io.FileOutputStream
+import java.io.FileWriter
+import java.io.IOException
 import java.net.URL
 import java.nio.channels.Channels
+import java.time.Duration
+import java.time.Instant
 import java.util.UUID
 import java.util.concurrent.Executors
 import kotlin.concurrent.thread
@@ -669,8 +677,37 @@ class AppViewModel(application: Application) : AndroidViewModel(application) {
 
         }
 
+        private fun saveJsonLToFile(context: Context, prompt: String, chatState: ChatState, start: Instant) {
+            val elapsedTime = Duration.between(start, Instant.now()).toMillis()
+            val responseText = chatState.messages.lastOrNull()?.text ?: " "
 
-        fun requestGenerate(prompt: String) {
+            // JSON 객체 생성 (안전하게 변환)
+            val jsonObject = JSONObject().apply {
+                put("input", prompt)
+                put("response", responseText)
+                put("latency", elapsedTime)
+            }
+
+            // JSONL 저장
+            val state = Environment.getExternalStorageState()
+            if (Environment.MEDIA_MOUNTED == state) {
+                val file = File(context.getExternalFilesDir(null), "result.jsonl")
+                try {
+                    val writer = FileWriter(file, true)
+                    val gson: Gson = GsonBuilder().setLenient().create()
+
+                    writer.append(gson.toJson(jsonObject) + "\n") // JSONL 형식으로 저장
+                    writer.close()
+                } catch (e: IOException) {
+                    e.printStackTrace()
+                }
+            } else {
+                Log.e("MainActivity", "External storage is not writable")
+            }
+        }
+
+        fun requestGenerate(context: Context, prompt: String) {
+            val start = Instant.now()
             require(chatable())
             switchToGenerating()
             executorService.submit {
@@ -690,6 +727,7 @@ class AppViewModel(application: Application) : AndroidViewModel(application) {
                 val runtimeStats = backend.runtimeStatsText()
                 viewModelScope.launch {
                     report.value = runtimeStats
+                    saveJsonLToFile(context, prompt, chatState, start)
                     if (modelChatState.value == ModelChatState.Generating) switchToReady()
                 }
             }

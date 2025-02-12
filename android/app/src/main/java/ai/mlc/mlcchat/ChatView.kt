@@ -59,6 +59,7 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.asImageBitmap
 import androidx.compose.ui.input.pointer.pointerInput
+import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.platform.LocalFocusManager
 import androidx.compose.ui.text.capitalize
 import androidx.compose.ui.text.style.TextAlign
@@ -81,7 +82,7 @@ fun ChatView(
         TopAppBar(
             title = {
                 Text(
-                    text = "PhiVA 4B",
+                    text = chatState.modelName.value,
                     color = MaterialTheme.colorScheme.onPrimary
                 )
             },
@@ -318,6 +319,7 @@ fun MessageView(messageData: MessageData, activity: Activity) {
 fun SendMessageView(chatState: AppViewModel.ChatState, activity: Activity) {
     val localFocusManager = LocalFocusManager.current
     var local_activity : MainActivity = activity as MainActivity
+    val context = LocalContext.current
     Row(
         horizontalArrangement = Arrangement.spacedBy(5.dp),
         verticalAlignment = Alignment.CenterVertically,
@@ -371,7 +373,7 @@ fun SendMessageView(chatState: AppViewModel.ChatState, activity: Activity) {
         IconButton(
             onClick = {
                 localFocusManager.clearFocus()
-                chatState.requestGenerate(text)
+                chatState.requestGenerate(context, text)
                 text = ""
             },
             modifier = Modifier
